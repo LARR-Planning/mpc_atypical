@@ -2,122 +2,122 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="mpc_atypical" targetName="topic_tools_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="geometry_msgs_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="rosgraph_msgs_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="gmock" />
-      <config projectName="mpc_atypical" targetName="map_msgs_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="sensor_msgs_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="tf_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="voxblox_msgs_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="nodelet_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="octomap_msgs_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="actionlib_msgs_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="octomap_msgs_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="pcl_msgs_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="std_msgs_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="actionlib_msgs_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="rosgraph_msgs_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="topic_tools_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="visualization_msgs_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="rosgraph_msgs_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="actionlib_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="std_srvs_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="download_extra_data" />
-      <config projectName="mpc_atypical" targetName="nodelet_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="tf2_msgs_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="voxblox_msgs_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="pcl_msgs_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="map_msgs_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="gtest_main" />
-      <config projectName="mpc_atypical" targetName="run_tests" />
-      <config projectName="mpc_atypical" targetName="tf_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="sensor_msgs_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="roscpp_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="nodelet_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="bond_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="rosgraph_msgs_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="std_srvs_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="tf2_msgs_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="tf2_msgs_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="dynamic_reconfigure_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="clang-tidy" />
-      <config projectName="mpc_atypical" targetName="visualization_msgs_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="roscpp_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="tf_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="map_msgs_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="dynamic_reconfigure_gencfg" />
-      <config projectName="mpc_atypical" targetName="topic_tools_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="rosgraph_msgs_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="actionlib_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="octomap_msgs_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="nodelet_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="dynamic_reconfigure_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="voxblox_msgs_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="sensor_msgs_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="voxblox_msgs_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="geometry_msgs_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="visualization_msgs_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="docs" />
-      <config projectName="mpc_atypical" targetName="tf2_msgs_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="bond_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="gmock_main" />
-      <config projectName="mpc_atypical" targetName="std_srvs_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="actionlib_msgs_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="dynamic_reconfigure_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="std_srvs_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="std_srvs_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="actionlib_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="visualization_msgs_generate_messages_cpp" />
       <config projectName="mpc_atypical" targetName="actionlib_msgs_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="std_msgs_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="octomap_msgs_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="topic_tools_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="clang-format" />
-      <config projectName="mpc_atypical" targetName="bond_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="geometry_msgs_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="actionlib_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="pcl_msgs_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="bond_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="std_msgs_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="gtest" />
-      <config projectName="mpc_atypical" targetName="pcl_ros_gencfg" />
-      <config projectName="mpc_atypical" targetName="topic_tools_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="nav_msgs_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="dynamic_reconfigure_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="geometry_msgs_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="actionlib_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="tf_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="bond_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="actionlib_msgs_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="nav_msgs_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="octomap_msgs_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="chomp_test_app" />
-      <config projectName="mpc_atypical" targetName="sensor_msgs_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="sensor_msgs_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="tf_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="voxblox_msgs_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="tests" />
-      <config projectName="mpc_atypical" targetName="nodelet_topic_tools_gencfg" />
-      <config projectName="mpc_atypical" targetName="pcl_msgs_generate_messages_nodejs" />
       <config projectName="mpc_atypical" targetName="doxygen" />
-      <config projectName="mpc_atypical" targetName="tf2_msgs_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="dynamic_reconfigure_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="nav_msgs_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="roscpp_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="nav_msgs_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="geometry_msgs_generate_messages_lisp" />
-      <config projectName="mpc_atypical" targetName="map_msgs_generate_messages_py" />
-      <config projectName="mpc_atypical" targetName="std_msgs_generate_messages_eus" />
-      <config projectName="mpc_atypical" targetName="visualization_msgs_generate_messages_nodejs" />
       <config projectName="mpc_atypical" targetName="map_msgs_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="std_msgs_generate_messages_nodejs" />
-      <config projectName="mpc_atypical" targetName="nodelet_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="dynamic_reconfigure_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="topic_tools_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="sensor_msgs_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="sensor_msgs_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="actionlib_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="dynamic_reconfigure_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="topic_tools_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="tf_generate_messages_nodejs" />
       <config projectName="mpc_atypical" targetName="nav_msgs_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="tf_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="dynamic_reconfigure_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="docs" />
+      <config projectName="mpc_atypical" targetName="actionlib_msgs_generate_messages_nodejs" />
+      <config projectName="mpc_atypical" targetName="nav_msgs_generate_messages_nodejs" />
       <config projectName="mpc_atypical" targetName="pcl_msgs_generate_messages_cpp" />
-      <config projectName="mpc_atypical" targetName="clean_test_results" />
+      <config projectName="mpc_atypical" targetName="nodelet_topic_tools_gencfg" />
+      <config projectName="mpc_atypical" targetName="actionlib_msgs_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="nodelet_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="visualization_msgs_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="voxblox_msgs_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="octomap_msgs_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="clang-format" />
+      <config projectName="mpc_atypical" targetName="map_msgs_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="sensor_msgs_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="gmock" />
+      <config projectName="mpc_atypical" targetName="pcl_msgs_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="dynamic_reconfigure_generate_messages_nodejs" />
+      <config projectName="mpc_atypical" targetName="gtest" />
+      <config projectName="mpc_atypical" targetName="map_msgs_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="std_srvs_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="octomap_msgs_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="actionlib_msgs_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="actionlib_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="map_msgs_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="pcl_msgs_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="sensor_msgs_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="clang-tidy" />
+      <config projectName="mpc_atypical" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="mpc_atypical" targetName="download_extra_data" />
+      <config projectName="mpc_atypical" targetName="geometry_msgs_generate_messages_nodejs" />
       <config projectName="mpc_atypical" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="mpc_atypical" targetName="actionlib_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="bond_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="std_msgs_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="actionlib_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="octomap_msgs_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="bond_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="std_srvs_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="octomap_msgs_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="nodelet_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="pcl_msgs_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="nodelet_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="gmock_main" />
+      <config projectName="mpc_atypical" targetName="dynamic_reconfigure_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="tf2_msgs_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="dynamic_reconfigure_gencfg" />
+      <config projectName="mpc_atypical" targetName="bond_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="run_tests" />
+      <config projectName="mpc_atypical" targetName="pcl_msgs_generate_messages_nodejs" />
+      <config projectName="mpc_atypical" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="voxblox_msgs_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="bond_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="map_msgs_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="voxblox_msgs_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="visualization_msgs_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="visualization_msgs_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="nodelet_generate_messages_nodejs" />
+      <config projectName="mpc_atypical" targetName="nodelet_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="tf2_msgs_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="octomap_msgs_generate_messages_nodejs" />
+      <config projectName="mpc_atypical" targetName="bond_generate_messages_nodejs" />
+      <config projectName="mpc_atypical" targetName="gtest_main" />
+      <config projectName="mpc_atypical" targetName="std_srvs_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="voxblox_msgs_generate_messages_nodejs" />
+      <config projectName="mpc_atypical" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="std_srvs_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="voxblox_msgs_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="sensor_msgs_generate_messages_nodejs" />
+      <config projectName="mpc_atypical" targetName="clean_test_results" />
+      <config projectName="mpc_atypical" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="mpc_atypical" targetName="topic_tools_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="tf2_msgs_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="visualization_msgs_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="tf_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="tf_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="actionlib_generate_messages_nodejs" />
+      <config projectName="mpc_atypical" targetName="visualization_msgs_generate_messages_nodejs" />
+      <config projectName="mpc_atypical" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="nav_msgs_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="roscpp_generate_messages_py" />
+      <config projectName="mpc_atypical" targetName="nav_msgs_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="topic_tools_generate_messages_nodejs" />
+      <config projectName="mpc_atypical" targetName="actionlib_msgs_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="topic_tools_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="pcl_ros_gencfg" />
+      <config projectName="mpc_atypical" targetName="tf2_msgs_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="std_srvs_generate_messages_nodejs" />
+      <config projectName="mpc_atypical" targetName="tf_generate_messages_cpp" />
+      <config projectName="mpc_atypical" targetName="tests" />
+      <config projectName="mpc_atypical" targetName="chomp_test_app" />
+      <config projectName="mpc_atypical" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="mpc_atypical" targetName="roscpp_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="nav_msgs_generate_messages_eus" />
+      <config projectName="mpc_atypical" targetName="tf2_msgs_generate_messages_nodejs" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -126,7 +126,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6026b57-c771-4e92-84e5-cf45ea20d8dc" name="Default Changelist" comment="" />
+    <list default="true" id="e6026b57-c771-4e92-84e5-cf45ea20d8dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/params/chomp_param_map3.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/params/chomp_param_map3.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rviz/rviz.rviz" beforeDir="false" afterPath="$PROJECT_DIR$/rviz/rviz.rviz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.atypical_main.cpp.swo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.atypical_main.cpp.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atypical_main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/atypical_main.cpp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,8 +146,12 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1RuihWjpA9rS52MoJFyzn6C8bLq" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
   </component>
@@ -869,24 +882,31 @@
       <workItem from="1570525725656" duration="144000" />
       <workItem from="1570527006783" duration="61000" />
       <workItem from="1570527210661" duration="876000" />
+      <workItem from="1570543556957" duration="797000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/atypical_main.cpp</url>
-          <line>73</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/atypical_main.cpp</url>
           <line>86</line>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

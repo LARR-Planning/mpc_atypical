@@ -70,8 +70,8 @@ int main(int argc, char ** argv)
     }
     */
 
-    for (int index_box=0 ;index_box < corridor_wrapper.corridor.box_seq.size();index_box++){
-        box_alloc_seq2.emplace_back(5);
+    for (int index_box=0 ;index_box < corridor_wrapper.corridor.box_alloc_seq.size();index_box++){
+        box_alloc_seq2.emplace_back(corridor_wrapper.corridor.box_alloc_seq[index_box]);
     }
 
 
@@ -84,13 +84,13 @@ int main(int argc, char ** argv)
     */
 
     // 2.  define chomp problem at this time
-    ros::Time t0 = ros::Time::now();  ros::Duration H(20);
+    ros::Time t0 = ros::Time::now();  ros::Duration H(100);
     ros::Time tf = t0 + H;
 
     CHOMP::Corridor2D sample_corridor(box_seq2, box_alloc_seq2, corridor_height); // corridor
     geometry_msgs::Point start;  start.x = -7; start.y = 1.5; // start
     geometry_msgs::Point goal; goal.x = 7; goal.y = 1.5; // goal
-    geometry_msgs::Point start_velocity; start_velocity.x = 0.0; start_velocity.y = -0.01;
+    geometry_msgs::Point start_velocity; start_velocity.x = 1.0; start_velocity.y = -0.01;
     // problem construction
     CHOMP::OptimProblem chomp_problem;
     chomp_problem.corridor = sample_corridor;
@@ -104,7 +104,7 @@ int main(int argc, char ** argv)
     chomp_wrapper.optim_traj_gen(chomp_problem);
 
 
-    ros::Rate rate(20);
+    ros::Rate rate(10);
 
     while(ros::ok()){
         chomp_wrapper.publish_routine();

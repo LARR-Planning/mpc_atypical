@@ -247,7 +247,6 @@ namespace libCorridorGen{
                     }
                     double obs_index = path_iter + count / 2;
                     SFC[box_iter].second = T[obs_index];
-                    box_count[box_iter] = count;
 
                     path_iter = path_iter + count / 2;
                     box_iter++;
@@ -257,6 +256,15 @@ namespace libCorridorGen{
                 }
             }
             SFC[box_max - 1].second = makespan;
+
+            int pi = 0;
+            for(int bi = 0; bi < box_max; bi++){
+                while(pi < path_max && box_log(bi, pi) > 0){
+                    pi++;
+                }
+                box_count[bi] = box_log(bi, pi-1);
+                int debug = 1;
+            }
 
             SFCtoCorridor2D(SFC, corridor);
 

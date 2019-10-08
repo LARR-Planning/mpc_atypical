@@ -4,9 +4,9 @@ optim_param: {descending_rate: 0.4,
                 descending_rate_min: 0.3,
                 descending_rate_max: 0.7,
                 n_step: 11,
-                max_iter: 300,
+                max_iter: 100,
                 weight_prior: 0.5, 
-                term_cond: 0.00005,
+                term_cond: 0.0005,
                 gamma: 10.0
                 }
 
