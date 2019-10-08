@@ -1,0 +1,113 @@
+\hypertarget{structlib_multi_robot_planning_1_1_plan_result}{}\section{lib\+Multi\+Robot\+Planning\+:\+:Plan\+Result$<$ State, Action, Cost $>$ Struct Template Reference}
+\label{structlib_multi_robot_planning_1_1_plan_result}\index{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result$<$ State, Action, Cost $>$@{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result$<$ State, Action, Cost $>$}}
+
+
+Represents the path for an agent.  
+
+
+
+
+{\ttfamily \#include $<$planresult.\+hpp$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::pair$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, Cost $>$ $>$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result_ad1bd2882efca968d38165742bae0a511}{states}
+\begin{DoxyCompactList}\small\item\em states and their g\+Score \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair$<$ \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost $>$ $>$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result_aa868b92b5c742f6c662e69779fbd09a4}{actions}
+\begin{DoxyCompactList}\small\item\em actions and their cost \end{DoxyCompactList}\item 
+Cost \hyperlink{structlib_multi_robot_planning_1_1_plan_result_ab340aeae4fdabbd0345403e9fa609d9a}{cost}
+\begin{DoxyCompactList}\small\item\em actual cost of the result \end{DoxyCompactList}\item 
+Cost \hyperlink{structlib_multi_robot_planning_1_1_plan_result_aefdd2f68b906f207ded16bfe46e0f7b0}{fmin}
+\begin{DoxyCompactList}\small\item\em lower bound of the cost (for suboptimal solvers) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename State, typename Action, typename Cost$>$\newline
+struct lib\+Multi\+Robot\+Planning\+::\+Plan\+Result$<$ State, Action, Cost $>$}
+
+Represents the path for an agent. 
+
+This class is used to store the result of a planner for a single agent. It has both the ordered list of states that need to be traversed as well as the ordered list of actions together with their respective costs
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em \hyperlink{structlib_multi_robot_planning_1_1_state}{State}} & Custom state for the search. Needs to be copy\textquotesingle{}able \\
+\hline
+{\em Action} & Custom action for the search. Needs to be copy\textquotesingle{}able \\
+\hline
+{\em Cost} & Custom Cost type (integer or floating point types) \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 19 of file planresult.\+hpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structlib_multi_robot_planning_1_1_plan_result_aa868b92b5c742f6c662e69779fbd09a4}\label{structlib_multi_robot_planning_1_1_plan_result_aa868b92b5c742f6c662e69779fbd09a4}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result@{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result}!actions@{actions}}
+\index{actions@{actions}!lib\+Multi\+Robot\+Planning\+::\+Plan\+Result@{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result}}
+\subsubsection{\texorpdfstring{actions}{actions}}
+{\footnotesize\ttfamily template$<$typename State, typename Action, typename Cost$>$ \\
+std\+::vector$<$std\+::pair$<$\hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost$>$ $>$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost $>$\+::actions}
+
+
+
+actions and their cost 
+
+
+
+Definition at line 23 of file planresult.\+hpp.
+
+\mbox{\Hypertarget{structlib_multi_robot_planning_1_1_plan_result_ab340aeae4fdabbd0345403e9fa609d9a}\label{structlib_multi_robot_planning_1_1_plan_result_ab340aeae4fdabbd0345403e9fa609d9a}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result@{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result}!cost@{cost}}
+\index{cost@{cost}!lib\+Multi\+Robot\+Planning\+::\+Plan\+Result@{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result}}
+\subsubsection{\texorpdfstring{cost}{cost}}
+{\footnotesize\ttfamily template$<$typename State, typename Action, typename Cost$>$ \\
+Cost \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost $>$\+::cost}
+
+
+
+actual cost of the result 
+
+
+
+Definition at line 25 of file planresult.\+hpp.
+
+\mbox{\Hypertarget{structlib_multi_robot_planning_1_1_plan_result_aefdd2f68b906f207ded16bfe46e0f7b0}\label{structlib_multi_robot_planning_1_1_plan_result_aefdd2f68b906f207ded16bfe46e0f7b0}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result@{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result}!fmin@{fmin}}
+\index{fmin@{fmin}!lib\+Multi\+Robot\+Planning\+::\+Plan\+Result@{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result}}
+\subsubsection{\texorpdfstring{fmin}{fmin}}
+{\footnotesize\ttfamily template$<$typename State, typename Action, typename Cost$>$ \\
+Cost \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost $>$\+::fmin}
+
+
+
+lower bound of the cost (for suboptimal solvers) 
+
+
+
+Definition at line 27 of file planresult.\+hpp.
+
+\mbox{\Hypertarget{structlib_multi_robot_planning_1_1_plan_result_ad1bd2882efca968d38165742bae0a511}\label{structlib_multi_robot_planning_1_1_plan_result_ad1bd2882efca968d38165742bae0a511}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result@{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result}!states@{states}}
+\index{states@{states}!lib\+Multi\+Robot\+Planning\+::\+Plan\+Result@{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result}}
+\subsubsection{\texorpdfstring{states}{states}}
+{\footnotesize\ttfamily template$<$typename State, typename Action, typename Cost$>$ \\
+std\+::vector$<$std\+::pair$<$\hyperlink{structlib_multi_robot_planning_1_1_state}{State}, Cost$>$ $>$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{lib\+Multi\+Robot\+Planning\+::\+Plan\+Result}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost $>$\+::states}
+
+
+
+states and their g\+Score 
+
+
+
+Definition at line 21 of file planresult.\+hpp.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/ecbs/include/\hyperlink{planresult_8hpp}{planresult.\+hpp}\end{DoxyCompactItemize}

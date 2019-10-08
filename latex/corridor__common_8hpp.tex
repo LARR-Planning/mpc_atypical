@@ -1,0 +1,124 @@
+\hypertarget{corridor__common_8hpp}{}\section{include/corridor\+\_\+common.hpp File Reference}
+\label{corridor__common_8hpp}\index{include/corridor\+\_\+common.\+hpp@{include/corridor\+\_\+common.\+hpp}}
+{\ttfamily \#include $<$octomap/\+Oc\+Tree.\+h$>$}\newline
+{\ttfamily \#include $<$geometry\+\_\+msgs/\+Pose\+Stamped.\+h$>$}\newline
+{\ttfamily \#include $<$visualization\+\_\+msgs/\+Marker\+Array.\+h$>$}\newline
+Include dependency graph for corridor\+\_\+common.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{corridor__common_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{corridor__common_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_box_constraint2_d}{Box\+Constraint2D}
+\item 
+struct \hyperlink{struct_corridor2_d}{Corridor2D}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{corridor__common_8hpp_a30a5d69a067978620e7b43ab7f5e6cc6}{S\+P\+\_\+\+E\+P\+S\+I\+L\+ON}~1e-\/9
+\item 
+\#define \hyperlink{corridor__common_8hpp_a3079800553daa93013e5323b06dea869}{S\+P\+\_\+\+E\+P\+S\+I\+L\+O\+N\+\_\+\+F\+L\+O\+AT}~1e-\/4
+\item 
+\#define \hyperlink{corridor__common_8hpp_ad3b090ad4ffcc68e9089eb90654ff31d}{S\+P\+\_\+\+I\+N\+F\+I\+N\+I\+TY}~1e+9
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ octomap\+::point3d $>$ \hyperlink{corridor__common_8hpp_a5505ba29bfa7d0966513cc22822f80f0}{init\+Traj\+\_\+t}
+\item 
+typedef std\+::vector$<$ std\+::pair$<$ std\+::vector$<$ double $>$, double $>$ $>$ \hyperlink{corridor__common_8hpp_ae83421dd1d2ba4e86a62abcc02b2eb4a}{S\+F\+C\+\_\+t}
+\item 
+typedef std\+::vector$<$ int $>$ \hyperlink{corridor__common_8hpp_a631ecdcd7d0a6bd15a6625fccbba7909}{Box\+Alloc\+Seq}
+\item 
+typedef std\+::vector$<$ \hyperlink{struct_box_constraint2_d}{Box\+Constraint2D} $>$ \hyperlink{corridor__common_8hpp_a14a6c0d0a5d79585147d5bab3bbb030a}{Box\+Constraint\+Seq}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{corridor__common_8hpp_a30a5d69a067978620e7b43ab7f5e6cc6}\label{corridor__common_8hpp_a30a5d69a067978620e7b43ab7f5e6cc6}} 
+\index{corridor\+\_\+common.\+hpp@{corridor\+\_\+common.\+hpp}!S\+P\+\_\+\+E\+P\+S\+I\+L\+ON@{S\+P\+\_\+\+E\+P\+S\+I\+L\+ON}}
+\index{S\+P\+\_\+\+E\+P\+S\+I\+L\+ON@{S\+P\+\_\+\+E\+P\+S\+I\+L\+ON}!corridor\+\_\+common.\+hpp@{corridor\+\_\+common.\+hpp}}
+\subsubsection{\texorpdfstring{S\+P\+\_\+\+E\+P\+S\+I\+L\+ON}{SP\_EPSILON}}
+{\footnotesize\ttfamily \#define S\+P\+\_\+\+E\+P\+S\+I\+L\+ON~1e-\/9}
+
+
+
+Definition at line 7 of file corridor\+\_\+common.\+hpp.
+
+\mbox{\Hypertarget{corridor__common_8hpp_a3079800553daa93013e5323b06dea869}\label{corridor__common_8hpp_a3079800553daa93013e5323b06dea869}} 
+\index{corridor\+\_\+common.\+hpp@{corridor\+\_\+common.\+hpp}!S\+P\+\_\+\+E\+P\+S\+I\+L\+O\+N\+\_\+\+F\+L\+O\+AT@{S\+P\+\_\+\+E\+P\+S\+I\+L\+O\+N\+\_\+\+F\+L\+O\+AT}}
+\index{S\+P\+\_\+\+E\+P\+S\+I\+L\+O\+N\+\_\+\+F\+L\+O\+AT@{S\+P\+\_\+\+E\+P\+S\+I\+L\+O\+N\+\_\+\+F\+L\+O\+AT}!corridor\+\_\+common.\+hpp@{corridor\+\_\+common.\+hpp}}
+\subsubsection{\texorpdfstring{S\+P\+\_\+\+E\+P\+S\+I\+L\+O\+N\+\_\+\+F\+L\+O\+AT}{SP\_EPSILON\_FLOAT}}
+{\footnotesize\ttfamily \#define S\+P\+\_\+\+E\+P\+S\+I\+L\+O\+N\+\_\+\+F\+L\+O\+AT~1e-\/4}
+
+
+
+Definition at line 8 of file corridor\+\_\+common.\+hpp.
+
+\mbox{\Hypertarget{corridor__common_8hpp_ad3b090ad4ffcc68e9089eb90654ff31d}\label{corridor__common_8hpp_ad3b090ad4ffcc68e9089eb90654ff31d}} 
+\index{corridor\+\_\+common.\+hpp@{corridor\+\_\+common.\+hpp}!S\+P\+\_\+\+I\+N\+F\+I\+N\+I\+TY@{S\+P\+\_\+\+I\+N\+F\+I\+N\+I\+TY}}
+\index{S\+P\+\_\+\+I\+N\+F\+I\+N\+I\+TY@{S\+P\+\_\+\+I\+N\+F\+I\+N\+I\+TY}!corridor\+\_\+common.\+hpp@{corridor\+\_\+common.\+hpp}}
+\subsubsection{\texorpdfstring{S\+P\+\_\+\+I\+N\+F\+I\+N\+I\+TY}{SP\_INFINITY}}
+{\footnotesize\ttfamily \#define S\+P\+\_\+\+I\+N\+F\+I\+N\+I\+TY~1e+9}
+
+
+
+Definition at line 9 of file corridor\+\_\+common.\+hpp.
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{corridor__common_8hpp_a631ecdcd7d0a6bd15a6625fccbba7909}\label{corridor__common_8hpp_a631ecdcd7d0a6bd15a6625fccbba7909}} 
+\index{corridor\+\_\+common.\+hpp@{corridor\+\_\+common.\+hpp}!Box\+Alloc\+Seq@{Box\+Alloc\+Seq}}
+\index{Box\+Alloc\+Seq@{Box\+Alloc\+Seq}!corridor\+\_\+common.\+hpp@{corridor\+\_\+common.\+hpp}}
+\subsubsection{\texorpdfstring{Box\+Alloc\+Seq}{BoxAllocSeq}}
+{\footnotesize\ttfamily typedef std\+::vector$<$int$>$ \hyperlink{corridor__common_8hpp_a631ecdcd7d0a6bd15a6625fccbba7909}{Box\+Alloc\+Seq}}
+
+
+
+Definition at line 23 of file corridor\+\_\+common.\+hpp.
+
+\mbox{\Hypertarget{corridor__common_8hpp_a14a6c0d0a5d79585147d5bab3bbb030a}\label{corridor__common_8hpp_a14a6c0d0a5d79585147d5bab3bbb030a}} 
+\index{corridor\+\_\+common.\+hpp@{corridor\+\_\+common.\+hpp}!Box\+Constraint\+Seq@{Box\+Constraint\+Seq}}
+\index{Box\+Constraint\+Seq@{Box\+Constraint\+Seq}!corridor\+\_\+common.\+hpp@{corridor\+\_\+common.\+hpp}}
+\subsubsection{\texorpdfstring{Box\+Constraint\+Seq}{BoxConstraintSeq}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\hyperlink{struct_box_constraint2_d}{Box\+Constraint2D}$>$ \hyperlink{corridor__common_8hpp_a14a6c0d0a5d79585147d5bab3bbb030a}{Box\+Constraint\+Seq}}
+
+
+
+Definition at line 24 of file corridor\+\_\+common.\+hpp.
+
+\mbox{\Hypertarget{corridor__common_8hpp_a5505ba29bfa7d0966513cc22822f80f0}\label{corridor__common_8hpp_a5505ba29bfa7d0966513cc22822f80f0}} 
+\index{corridor\+\_\+common.\+hpp@{corridor\+\_\+common.\+hpp}!init\+Traj\+\_\+t@{init\+Traj\+\_\+t}}
+\index{init\+Traj\+\_\+t@{init\+Traj\+\_\+t}!corridor\+\_\+common.\+hpp@{corridor\+\_\+common.\+hpp}}
+\subsubsection{\texorpdfstring{init\+Traj\+\_\+t}{initTraj\_t}}
+{\footnotesize\ttfamily typedef std\+::vector$<$octomap\+::point3d$>$ \hyperlink{corridor__common_8hpp_a5505ba29bfa7d0966513cc22822f80f0}{init\+Traj\+\_\+t}}
+
+
+
+Definition at line 11 of file corridor\+\_\+common.\+hpp.
+
+\mbox{\Hypertarget{corridor__common_8hpp_ae83421dd1d2ba4e86a62abcc02b2eb4a}\label{corridor__common_8hpp_ae83421dd1d2ba4e86a62abcc02b2eb4a}} 
+\index{corridor\+\_\+common.\+hpp@{corridor\+\_\+common.\+hpp}!S\+F\+C\+\_\+t@{S\+F\+C\+\_\+t}}
+\index{S\+F\+C\+\_\+t@{S\+F\+C\+\_\+t}!corridor\+\_\+common.\+hpp@{corridor\+\_\+common.\+hpp}}
+\subsubsection{\texorpdfstring{S\+F\+C\+\_\+t}{SFC\_t}}
+{\footnotesize\ttfamily typedef std\+::vector$<$std\+::pair$<$std\+::vector$<$double$>$, double$>$ $>$ \hyperlink{corridor__common_8hpp_ae83421dd1d2ba4e86a62abcc02b2eb4a}{S\+F\+C\+\_\+t}}
+
+
+
+Definition at line 12 of file corridor\+\_\+common.\+hpp.
+

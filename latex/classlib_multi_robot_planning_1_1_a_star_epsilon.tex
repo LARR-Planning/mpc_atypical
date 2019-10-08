@@ -1,0 +1,117 @@
+\hypertarget{classlib_multi_robot_planning_1_1_a_star_epsilon}{}\section{lib\+Multi\+Robot\+Planning\+:\+:A\+Star\+Epsilon$<$ State, Action, Cost, Environment, State\+Hasher $>$ Class Template Reference}
+\label{classlib_multi_robot_planning_1_1_a_star_epsilon}\index{lib\+Multi\+Robot\+Planning\+::\+A\+Star\+Epsilon$<$ State, Action, Cost, Environment, State\+Hasher $>$@{lib\+Multi\+Robot\+Planning\+::\+A\+Star\+Epsilon$<$ State, Action, Cost, Environment, State\+Hasher $>$}}
+
+
+A$\ast$\+\_\+epsilon Algorithm to find the shortest path with a given suboptimality bound (also known as focal search)  
+
+
+
+
+{\ttfamily \#include $<$a\+\_\+star\+\_\+epsilon.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlib_multi_robot_planning_1_1_a_star_epsilon_a553d070b869a0d33dbbea6f0e95fee1a}{A\+Star\+Epsilon} (\hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment} \&environment, float w)
+\item 
+bool \hyperlink{classlib_multi_robot_planning_1_1_a_star_epsilon_a24eddac1c20a92f7a58d4865b13a0186}{search} (const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&start\+State, \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost $>$ \&solution)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename State, typename Action, typename Cost, typename Environment, typename State\+Hasher = std\+::hash$<$\+State$>$$>$\newline
+class lib\+Multi\+Robot\+Planning\+::\+A\+Star\+Epsilon$<$ State, Action, Cost, Environment, State\+Hasher $>$}
+
+A$\ast$\+\_\+epsilon Algorithm to find the shortest path with a given suboptimality bound (also known as focal search) 
+
+This class implements the A$\ast$\+\_\+epsilon algorithm, an informed search algorithm that finds the shortest path for a given map up to a suboptimality factor. It uses an admissible heuristic (to keep track of the optimum) and an inadmissible heuristic ( to guide the search within a suboptimal bound w.)
+
+Details of the algorithm can be found in the following paper\+:~\newline
+Judea Pearl, Jin H. Kim\+:~\newline
+\char`\"{}\+Studies in Semi-\/\+Admissible Heuristics.\char`\"{}" I\+E\+EE Trans. Pattern Anal. Mach. Intell. 4(4)\+: 392-\/399 (1982)~\newline
+\href{https://doi.org/10.1109/TPAMI.1982.4767270}{\tt https\+://doi.\+org/10.\+1109/\+T\+P\+A\+M\+I.\+1982.\+4767270}
+
+This class can either use a fibonacci heap, or a d-\/ary heap. The latter is the default. Define \char`\"{}\+U\+S\+E\+\_\+\+F\+I\+B\+O\+N\+A\+C\+C\+I\+\_\+\+H\+E\+A\+P\char`\"{} to use the fibonacci heap instead.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em \hyperlink{structlib_multi_robot_planning_1_1_state}{State}} & Custom state for the search. Needs to be copy\textquotesingle{}able \\
+\hline
+{\em Action} & Custom action for the search. Needs to be copy\textquotesingle{}able \\
+\hline
+{\em Cost} & Custom Cost type (integer or floating point types) \\
+\hline
+{\em \hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment}} & This class needs to provide the custom logic. In particular, it needs to support the following functions\+:
+\begin{DoxyItemize}
+\item {\ttfamily Cost admissible\+Heuristic(const State\& s)}~\newline
+ This function can return 0 if no suitable heuristic is available.
+\item {\ttfamily Cost focal\+State\+Heuristic(const State\& s, Cost g\+Score)}~\newline
+ This function computes a (potentially inadmissible) heuristic for the given state.
+\item {\ttfamily Cost focal\+Transition\+Heuristic(const \hyperlink{structlib_multi_robot_planning_1_1_state}{State}\& s1, const \hyperlink{structlib_multi_robot_planning_1_1_state}{State}\& s2, Cost g\+Score\+S1, Cost g\+Score\+S2)}~\newline
+ This function computes a (potentially inadmissible) heuristic for the given state transition.
+\item {\ttfamily bool is\+Solution(const State\& s)}~\newline
+ Return true if the given state is a goal state.
+\item {\ttfamily void get\+Neighbors(const \hyperlink{structlib_multi_robot_planning_1_1_state}{State}\& s, std\+::vector$<$\hyperlink{structlib_multi_robot_planning_1_1_neighbor}{Neighbor}$<$\hyperlink{structlib_multi_robot_planning_1_1_state}{State}, Action, int$>$ $>$\& neighbors)}~\newline
+ Fill the list of neighboring state for the given state s.
+\item {\ttfamily void on\+Expand\+Node(const State\& s, int f\+Score, int g\+Score)}~\newline
+ This function is called on every expansion and can be used for statistical purposes.
+\item {\ttfamily void on\+Discover(const State\& s, int f\+Score, int g\+Score)}~\newline
+ This function is called on every node discovery and can be used for statistical purposes.
+\end{DoxyItemize}\\
+\hline
+{\em State\+Hasher} & A class to convert a state to a hash value. Default\+: \hyperlink{structstd_1_1hash_3_01_state_01_4}{std\+::hash$<$\+State$>$} \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 81 of file a\+\_\+star\+\_\+epsilon.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_a_star_epsilon_a553d070b869a0d33dbbea6f0e95fee1a}\label{classlib_multi_robot_planning_1_1_a_star_epsilon_a553d070b869a0d33dbbea6f0e95fee1a}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+A\+Star\+Epsilon@{lib\+Multi\+Robot\+Planning\+::\+A\+Star\+Epsilon}!A\+Star\+Epsilon@{A\+Star\+Epsilon}}
+\index{A\+Star\+Epsilon@{A\+Star\+Epsilon}!lib\+Multi\+Robot\+Planning\+::\+A\+Star\+Epsilon@{lib\+Multi\+Robot\+Planning\+::\+A\+Star\+Epsilon}}
+\subsubsection{\texorpdfstring{A\+Star\+Epsilon()}{AStarEpsilon()}}
+{\footnotesize\ttfamily template$<$typename State, typename Action, typename Cost, typename Environment, typename State\+Hasher = std\+::hash$<$\+State$>$$>$ \\
+\hyperlink{classlib_multi_robot_planning_1_1_a_star_epsilon}{lib\+Multi\+Robot\+Planning\+::\+A\+Star\+Epsilon}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost, \hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment}, State\+Hasher $>$\+::\hyperlink{classlib_multi_robot_planning_1_1_a_star_epsilon}{A\+Star\+Epsilon} (\begin{DoxyParamCaption}\item[{\hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment} \&}]{environment,  }\item[{float}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 83 of file a\+\_\+star\+\_\+epsilon.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_a_star_epsilon_a24eddac1c20a92f7a58d4865b13a0186}\label{classlib_multi_robot_planning_1_1_a_star_epsilon_a24eddac1c20a92f7a58d4865b13a0186}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+A\+Star\+Epsilon@{lib\+Multi\+Robot\+Planning\+::\+A\+Star\+Epsilon}!search@{search}}
+\index{search@{search}!lib\+Multi\+Robot\+Planning\+::\+A\+Star\+Epsilon@{lib\+Multi\+Robot\+Planning\+::\+A\+Star\+Epsilon}}
+\subsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily template$<$typename State, typename Action, typename Cost, typename Environment, typename State\+Hasher = std\+::hash$<$\+State$>$$>$ \\
+bool \hyperlink{classlib_multi_robot_planning_1_1_a_star_epsilon}{lib\+Multi\+Robot\+Planning\+::\+A\+Star\+Epsilon}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost, \hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment}, State\+Hasher $>$\+::search (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&}]{start\+State,  }\item[{\hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost $>$ \&}]{solution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 86 of file a\+\_\+star\+\_\+epsilon.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlib_multi_robot_planning_1_1_a_star_epsilon_a24eddac1c20a92f7a58d4865b13a0186_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlib_multi_robot_planning_1_1_a_star_epsilon_a24eddac1c20a92f7a58d4865b13a0186_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/ecbs/include/\hyperlink{a__star__epsilon_8hpp}{a\+\_\+star\+\_\+epsilon.\+hpp}\end{DoxyCompactItemize}

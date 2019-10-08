@@ -1,0 +1,630 @@
+\hypertarget{class_environment}{}\section{Environment Class Reference}
+\label{class_environment}\index{Environment@{Environment}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_environment_a0ddc9c7b0862c1313b1ca99c2acb6d93}{Environment} (size\+\_\+t dimx, size\+\_\+t dimy, std\+::unordered\+\_\+set$<$ \hyperlink{struct_state}{State} $>$ obstacles, \hyperlink{struct_state}{State} goal)
+\item 
+int \hyperlink{class_environment_a171e702c373005a9d6e77b79daa365d9}{admissible\+Heuristic} (const \hyperlink{struct_state}{State} \&s)
+\item 
+bool \hyperlink{class_environment_aab14c04c6aaaf6b0d0f26f8b92d44400}{is\+Solution} (const \hyperlink{struct_state}{State} \&s)
+\item 
+void \hyperlink{class_environment_a4ae69480c6b9e716f282839dc4f323c0}{get\+Neighbors} (const \hyperlink{struct_state}{State} \&s, std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_neighbor}{Neighbor}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&neighbors)
+\item 
+void \hyperlink{class_environment_a37ccf718e3e1b4540dadbe89f1631ee6}{on\+Expand\+Node} (const \hyperlink{struct_state}{State} \&, int, int)
+\item 
+void \hyperlink{class_environment_a0c694f293bf62ef33dab4b878893bacf}{on\+Discover} (const \hyperlink{struct_state}{State} \&, int, int)
+\item 
+bool \hyperlink{class_environment_ad21a790ab0279b0f5b445e1f460dc971}{state\+Valid} (const \hyperlink{struct_state}{State} \&s)
+\item 
+\hyperlink{class_environment_aa5836d453e17e782e72d48437799e12d}{Environment} (size\+\_\+t dimx, size\+\_\+t dimy, size\+\_\+t dimz, std\+::unordered\+\_\+set$<$ \hyperlink{struct_state}{State} $>$ obstacles, \hyperlink{struct_state}{State} goal)
+\item 
+int \hyperlink{class_environment_a171e702c373005a9d6e77b79daa365d9}{admissible\+Heuristic} (const \hyperlink{struct_state}{State} \&s)
+\item 
+int \hyperlink{class_environment_a2ed02c2b1a21ae2aabb0e1758e945540}{focal\+State\+Heuristic} (const \hyperlink{struct_state}{State} \&, int g\+Score)
+\item 
+int \hyperlink{class_environment_ac799c113b3fd83ec89265786c9f29f37}{focal\+Transition\+Heuristic} (const \hyperlink{struct_state}{State} \&, const \hyperlink{struct_state}{State} \&, int g\+Score\+S1, int g\+Score\+S2)
+\item 
+bool \hyperlink{class_environment_aab14c04c6aaaf6b0d0f26f8b92d44400}{is\+Solution} (const \hyperlink{struct_state}{State} \&s)
+\item 
+void \hyperlink{class_environment_a4ae69480c6b9e716f282839dc4f323c0}{get\+Neighbors} (const \hyperlink{struct_state}{State} \&s, std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_neighbor}{Neighbor}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&neighbors)
+\item 
+void \hyperlink{class_environment_a37ccf718e3e1b4540dadbe89f1631ee6}{on\+Expand\+Node} (const \hyperlink{struct_state}{State} \&, int, int)
+\item 
+void \hyperlink{class_environment_a0c694f293bf62ef33dab4b878893bacf}{on\+Discover} (const \hyperlink{struct_state}{State} \&, int, int)
+\item 
+bool \hyperlink{class_environment_ad21a790ab0279b0f5b445e1f460dc971}{state\+Valid} (const \hyperlink{struct_state}{State} \&s)
+\item 
+\hyperlink{class_environment_a12b8baed8e6090b3eb528a27b1fecd0a}{Environment} (size\+\_\+t dimx, size\+\_\+t dimy, size\+\_\+t dimz, std\+::unordered\+\_\+set$<$ \hyperlink{struct_location}{Location} $>$ obstacles, std\+::vector$<$ \hyperlink{struct_location}{Location} $>$ goals)
+\item 
+\hyperlink{class_environment_abdb9fe9212fd5d47b5664df3e67c975f}{Environment} (const \hyperlink{class_environment}{Environment} \&)=delete
+\item 
+\hyperlink{class_environment}{Environment} \& \hyperlink{class_environment_a31a390fc46a51b9adab61b2511ef2a31}{operator=} (const \hyperlink{class_environment}{Environment} \&)=delete
+\item 
+void \hyperlink{class_environment_a56b6dff6d3af3fe6404936a14a259c56}{set\+Low\+Level\+Context} (size\+\_\+t agent\+Idx, const \hyperlink{struct_constraints}{Constraints} $\ast$constraints)
+\item 
+int \hyperlink{class_environment_a171e702c373005a9d6e77b79daa365d9}{admissible\+Heuristic} (const \hyperlink{struct_state}{State} \&s)
+\item 
+bool \hyperlink{class_environment_aab14c04c6aaaf6b0d0f26f8b92d44400}{is\+Solution} (const \hyperlink{struct_state}{State} \&s)
+\item 
+void \hyperlink{class_environment_a4ae69480c6b9e716f282839dc4f323c0}{get\+Neighbors} (const \hyperlink{struct_state}{State} \&s, std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_neighbor}{Neighbor}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&neighbors)
+\item 
+bool \hyperlink{class_environment_a666d55a1f0bbc038d3662b75f400faa4}{get\+First\+Conflict} (const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&solution, \hyperlink{struct_conflict}{Conflict} \&result)
+\item 
+void \hyperlink{class_environment_a532b4870bfa50eb350e037dc8aa06291}{create\+Constraints\+From\+Conflict} (const \hyperlink{struct_conflict}{Conflict} \&conflict, std\+::map$<$ size\+\_\+t, \hyperlink{struct_constraints}{Constraints} $>$ \&constraints)
+\item 
+void \hyperlink{class_environment_ad8d27db649c723053fe9d90d97c0e4cd}{on\+Expand\+High\+Level\+Node} (int)
+\item 
+void \hyperlink{class_environment_ad00ee2a501b1e78f19c86a0d01e49d52}{on\+Expand\+Low\+Level\+Node} (const \hyperlink{struct_state}{State} \&, int, int)
+\item 
+int \hyperlink{class_environment_a117b88b2a1e0267cfe28d0a6545af72d}{high\+Level\+Expanded} ()
+\item 
+int \hyperlink{class_environment_af870f6d7c69f7401f5d724b0ee60308f}{low\+Level\+Expanded} () const
+\item 
+\hyperlink{class_environment_a12b8baed8e6090b3eb528a27b1fecd0a}{Environment} (size\+\_\+t dimx, size\+\_\+t dimy, size\+\_\+t dimz, std\+::unordered\+\_\+set$<$ \hyperlink{struct_location}{Location} $>$ obstacles, std\+::vector$<$ \hyperlink{struct_location}{Location} $>$ goals)
+\item 
+\hyperlink{class_environment_abdb9fe9212fd5d47b5664df3e67c975f}{Environment} (const \hyperlink{class_environment}{Environment} \&)=delete
+\item 
+\hyperlink{class_environment}{Environment} \& \hyperlink{class_environment_a31a390fc46a51b9adab61b2511ef2a31}{operator=} (const \hyperlink{class_environment}{Environment} \&)=delete
+\item 
+void \hyperlink{class_environment_a56b6dff6d3af3fe6404936a14a259c56}{set\+Low\+Level\+Context} (size\+\_\+t agent\+Idx, const \hyperlink{struct_constraints}{Constraints} $\ast$constraints)
+\item 
+int \hyperlink{class_environment_a171e702c373005a9d6e77b79daa365d9}{admissible\+Heuristic} (const \hyperlink{struct_state}{State} \&s)
+\item 
+int \hyperlink{class_environment_ae9c3ec27de36238b2d0ea75b8e2e80b1}{focal\+State\+Heuristic} (const \hyperlink{struct_state}{State} \&s, int, const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&solution)
+\item 
+int \hyperlink{class_environment_a32ad1d8cf07f2104e033065fb95fadf6}{focal\+Transition\+Heuristic} (const \hyperlink{struct_state}{State} \&s1a, const \hyperlink{struct_state}{State} \&s1b, int, int, const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&solution)
+\item 
+int \hyperlink{class_environment_a54d9038dd600b904b73936273d711fd0}{focal\+Heuristic} (const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&solution)
+\item 
+bool \hyperlink{class_environment_aab14c04c6aaaf6b0d0f26f8b92d44400}{is\+Solution} (const \hyperlink{struct_state}{State} \&s)
+\item 
+void \hyperlink{class_environment_a4ae69480c6b9e716f282839dc4f323c0}{get\+Neighbors} (const \hyperlink{struct_state}{State} \&s, std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_neighbor}{Neighbor}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&neighbors)
+\item 
+bool \hyperlink{class_environment_a666d55a1f0bbc038d3662b75f400faa4}{get\+First\+Conflict} (const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&solution, \hyperlink{struct_conflict}{Conflict} \&result)
+\item 
+void \hyperlink{class_environment_a532b4870bfa50eb350e037dc8aa06291}{create\+Constraints\+From\+Conflict} (const \hyperlink{struct_conflict}{Conflict} \&conflict, std\+::map$<$ size\+\_\+t, \hyperlink{struct_constraints}{Constraints} $>$ \&constraints)
+\item 
+void \hyperlink{class_environment_ad8d27db649c723053fe9d90d97c0e4cd}{on\+Expand\+High\+Level\+Node} (int)
+\item 
+void \hyperlink{class_environment_ad00ee2a501b1e78f19c86a0d01e49d52}{on\+Expand\+Low\+Level\+Node} (const \hyperlink{struct_state}{State} \&, int, int)
+\item 
+int \hyperlink{class_environment_a117b88b2a1e0267cfe28d0a6545af72d}{high\+Level\+Expanded} ()
+\item 
+int \hyperlink{class_environment_af870f6d7c69f7401f5d724b0ee60308f}{low\+Level\+Expanded} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 70 of file a\+\_\+star.\+cpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_environment_a0ddc9c7b0862c1313b1ca99c2acb6d93}\label{class_environment_a0ddc9c7b0862c1313b1ca99c2acb6d93}} 
+\index{Environment@{Environment}!Environment@{Environment}}
+\index{Environment@{Environment}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{Environment()}{Environment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Environment\+::\+Environment (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{dimx,  }\item[{size\+\_\+t}]{dimy,  }\item[{std\+::unordered\+\_\+set$<$ \hyperlink{struct_state}{State} $>$}]{obstacles,  }\item[{\hyperlink{struct_state}{State}}]{goal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 72 of file a\+\_\+star.\+cpp.
+
+\mbox{\Hypertarget{class_environment_aa5836d453e17e782e72d48437799e12d}\label{class_environment_aa5836d453e17e782e72d48437799e12d}} 
+\index{Environment@{Environment}!Environment@{Environment}}
+\index{Environment@{Environment}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{Environment()}{Environment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Environment\+::\+Environment (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{dimx,  }\item[{size\+\_\+t}]{dimy,  }\item[{size\+\_\+t}]{dimz,  }\item[{std\+::unordered\+\_\+set$<$ \hyperlink{struct_state}{State} $>$}]{obstacles,  }\item[{\hyperlink{struct_state}{State}}]{goal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 82 of file a\+\_\+star\+\_\+epsilon.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a12b8baed8e6090b3eb528a27b1fecd0a}\label{class_environment_a12b8baed8e6090b3eb528a27b1fecd0a}} 
+\index{Environment@{Environment}!Environment@{Environment}}
+\index{Environment@{Environment}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{Environment()}{Environment()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Environment\+::\+Environment (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{dimx,  }\item[{size\+\_\+t}]{dimy,  }\item[{size\+\_\+t}]{dimz,  }\item[{std\+::unordered\+\_\+set$<$ \hyperlink{struct_location}{Location} $>$}]{obstacles,  }\item[{std\+::vector$<$ \hyperlink{struct_location}{Location} $>$}]{goals }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 269 of file cbs.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_environment_a12b8baed8e6090b3eb528a27b1fecd0a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_environment_abdb9fe9212fd5d47b5664df3e67c975f}\label{class_environment_abdb9fe9212fd5d47b5664df3e67c975f}} 
+\index{Environment@{Environment}!Environment@{Environment}}
+\index{Environment@{Environment}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{Environment()}{Environment()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Environment\+::\+Environment (\begin{DoxyParamCaption}\item[{const \hyperlink{class_environment}{Environment} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_environment_a12b8baed8e6090b3eb528a27b1fecd0a}\label{class_environment_a12b8baed8e6090b3eb528a27b1fecd0a}} 
+\index{Environment@{Environment}!Environment@{Environment}}
+\index{Environment@{Environment}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{Environment()}{Environment()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Environment\+::\+Environment (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{dimx,  }\item[{size\+\_\+t}]{dimy,  }\item[{size\+\_\+t}]{dimz,  }\item[{std\+::unordered\+\_\+set$<$ \hyperlink{struct_location}{Location} $>$}]{obstacles,  }\item[{std\+::vector$<$ \hyperlink{struct_location}{Location} $>$}]{goals }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 269 of file ecbs.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_environment_a12b8baed8e6090b3eb528a27b1fecd0a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_environment_abdb9fe9212fd5d47b5664df3e67c975f}\label{class_environment_abdb9fe9212fd5d47b5664df3e67c975f}} 
+\index{Environment@{Environment}!Environment@{Environment}}
+\index{Environment@{Environment}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{Environment()}{Environment()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Environment\+::\+Environment (\begin{DoxyParamCaption}\item[{const \hyperlink{class_environment}{Environment} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_environment_a171e702c373005a9d6e77b79daa365d9}\label{class_environment_a171e702c373005a9d6e77b79daa365d9}} 
+\index{Environment@{Environment}!admissible\+Heuristic@{admissible\+Heuristic}}
+\index{admissible\+Heuristic@{admissible\+Heuristic}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{admissible\+Heuristic()}{admissibleHeuristic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily int Environment\+::admissible\+Heuristic (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 80 of file a\+\_\+star.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a171e702c373005a9d6e77b79daa365d9}\label{class_environment_a171e702c373005a9d6e77b79daa365d9}} 
+\index{Environment@{Environment}!admissible\+Heuristic@{admissible\+Heuristic}}
+\index{admissible\+Heuristic@{admissible\+Heuristic}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{admissible\+Heuristic()}{admissibleHeuristic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily int Environment\+::admissible\+Heuristic (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 91 of file a\+\_\+star\+\_\+epsilon.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a171e702c373005a9d6e77b79daa365d9}\label{class_environment_a171e702c373005a9d6e77b79daa365d9}} 
+\index{Environment@{Environment}!admissible\+Heuristic@{admissible\+Heuristic}}
+\index{admissible\+Heuristic@{admissible\+Heuristic}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{admissible\+Heuristic()}{admissibleHeuristic()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily int Environment\+::admissible\+Heuristic (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 299 of file cbs.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a171e702c373005a9d6e77b79daa365d9}\label{class_environment_a171e702c373005a9d6e77b79daa365d9}} 
+\index{Environment@{Environment}!admissible\+Heuristic@{admissible\+Heuristic}}
+\index{admissible\+Heuristic@{admissible\+Heuristic}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{admissible\+Heuristic()}{admissibleHeuristic()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily int Environment\+::admissible\+Heuristic (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 299 of file ecbs.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a532b4870bfa50eb350e037dc8aa06291}\label{class_environment_a532b4870bfa50eb350e037dc8aa06291}} 
+\index{Environment@{Environment}!create\+Constraints\+From\+Conflict@{create\+Constraints\+From\+Conflict}}
+\index{create\+Constraints\+From\+Conflict@{create\+Constraints\+From\+Conflict}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{create\+Constraints\+From\+Conflict()}{createConstraintsFromConflict()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Environment\+::create\+Constraints\+From\+Conflict (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_conflict}{Conflict} \&}]{conflict,  }\item[{std\+::map$<$ size\+\_\+t, \hyperlink{struct_constraints}{Constraints} $>$ \&}]{constraints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 427 of file cbs.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a532b4870bfa50eb350e037dc8aa06291}\label{class_environment_a532b4870bfa50eb350e037dc8aa06291}} 
+\index{Environment@{Environment}!create\+Constraints\+From\+Conflict@{create\+Constraints\+From\+Conflict}}
+\index{create\+Constraints\+From\+Conflict@{create\+Constraints\+From\+Conflict}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{create\+Constraints\+From\+Conflict()}{createConstraintsFromConflict()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Environment\+::create\+Constraints\+From\+Conflict (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_conflict}{Conflict} \&}]{conflict,  }\item[{std\+::map$<$ size\+\_\+t, \hyperlink{struct_constraints}{Constraints} $>$ \&}]{constraints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 496 of file ecbs.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a54d9038dd600b904b73936273d711fd0}\label{class_environment_a54d9038dd600b904b73936273d711fd0}} 
+\index{Environment@{Environment}!focal\+Heuristic@{focal\+Heuristic}}
+\index{focal\+Heuristic@{focal\+Heuristic}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{focal\+Heuristic()}{focalHeuristic()}}
+{\footnotesize\ttfamily int Environment\+::focal\+Heuristic (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&}]{solution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 339 of file ecbs.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_environment_a54d9038dd600b904b73936273d711fd0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_environment_a2ed02c2b1a21ae2aabb0e1758e945540}\label{class_environment_a2ed02c2b1a21ae2aabb0e1758e945540}} 
+\index{Environment@{Environment}!focal\+State\+Heuristic@{focal\+State\+Heuristic}}
+\index{focal\+State\+Heuristic@{focal\+State\+Heuristic}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{focal\+State\+Heuristic()}{focalStateHeuristic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Environment\+::focal\+State\+Heuristic (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{,  }\item[{int}]{g\+Score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 96 of file a\+\_\+star\+\_\+epsilon.\+cpp.
+
+\mbox{\Hypertarget{class_environment_ae9c3ec27de36238b2d0ea75b8e2e80b1}\label{class_environment_ae9c3ec27de36238b2d0ea75b8e2e80b1}} 
+\index{Environment@{Environment}!focal\+State\+Heuristic@{focal\+State\+Heuristic}}
+\index{focal\+State\+Heuristic@{focal\+State\+Heuristic}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{focal\+State\+Heuristic()}{focalStateHeuristic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Environment\+::focal\+State\+Heuristic (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{s,  }\item[{int}]{,  }\item[{const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&}]{solution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 306 of file ecbs.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_environment_ae9c3ec27de36238b2d0ea75b8e2e80b1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_environment_ac799c113b3fd83ec89265786c9f29f37}\label{class_environment_ac799c113b3fd83ec89265786c9f29f37}} 
+\index{Environment@{Environment}!focal\+Transition\+Heuristic@{focal\+Transition\+Heuristic}}
+\index{focal\+Transition\+Heuristic@{focal\+Transition\+Heuristic}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{focal\+Transition\+Heuristic()}{focalTransitionHeuristic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Environment\+::focal\+Transition\+Heuristic (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{,  }\item[{const \hyperlink{struct_state}{State} \&}]{,  }\item[{int}]{g\+Score\+S1,  }\item[{int}]{g\+Score\+S2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 101 of file a\+\_\+star\+\_\+epsilon.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a32ad1d8cf07f2104e033065fb95fadf6}\label{class_environment_a32ad1d8cf07f2104e033065fb95fadf6}} 
+\index{Environment@{Environment}!focal\+Transition\+Heuristic@{focal\+Transition\+Heuristic}}
+\index{focal\+Transition\+Heuristic@{focal\+Transition\+Heuristic}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{focal\+Transition\+Heuristic()}{focalTransitionHeuristic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Environment\+::focal\+Transition\+Heuristic (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{s1a,  }\item[{const \hyperlink{struct_state}{State} \&}]{s1b,  }\item[{int}]{,  }\item[{int}]{,  }\item[{const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&}]{solution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 322 of file ecbs.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_environment_a32ad1d8cf07f2104e033065fb95fadf6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_environment_a666d55a1f0bbc038d3662b75f400faa4}\label{class_environment_a666d55a1f0bbc038d3662b75f400faa4}} 
+\index{Environment@{Environment}!get\+First\+Conflict@{get\+First\+Conflict}}
+\index{get\+First\+Conflict@{get\+First\+Conflict}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{get\+First\+Conflict()}{getFirstConflict()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Environment\+::get\+First\+Conflict (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&}]{solution,  }\item[{\hyperlink{struct_conflict}{Conflict} \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 371 of file cbs.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_environment_a666d55a1f0bbc038d3662b75f400faa4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_environment_a666d55a1f0bbc038d3662b75f400faa4}\label{class_environment_a666d55a1f0bbc038d3662b75f400faa4}} 
+\index{Environment@{Environment}!get\+First\+Conflict@{get\+First\+Conflict}}
+\index{get\+First\+Conflict@{get\+First\+Conflict}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{get\+First\+Conflict()}{getFirstConflict()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Environment\+::get\+First\+Conflict (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&}]{solution,  }\item[{\hyperlink{struct_conflict}{Conflict} \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 440 of file ecbs.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_environment_a666d55a1f0bbc038d3662b75f400faa4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_environment_a4ae69480c6b9e716f282839dc4f323c0}\label{class_environment_a4ae69480c6b9e716f282839dc4f323c0}} 
+\index{Environment@{Environment}!get\+Neighbors@{get\+Neighbors}}
+\index{get\+Neighbors@{get\+Neighbors}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{get\+Neighbors()}{getNeighbors()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Environment\+::get\+Neighbors (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{s,  }\item[{std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_neighbor}{Neighbor}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&}]{neighbors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 86 of file a\+\_\+star.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a4ae69480c6b9e716f282839dc4f323c0}\label{class_environment_a4ae69480c6b9e716f282839dc4f323c0}} 
+\index{Environment@{Environment}!get\+Neighbors@{get\+Neighbors}}
+\index{get\+Neighbors@{get\+Neighbors}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{get\+Neighbors()}{getNeighbors()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Environment\+::get\+Neighbors (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{s,  }\item[{std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_neighbor}{Neighbor}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&}]{neighbors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 109 of file a\+\_\+star\+\_\+epsilon.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a4ae69480c6b9e716f282839dc4f323c0}\label{class_environment_a4ae69480c6b9e716f282839dc4f323c0}} 
+\index{Environment@{Environment}!get\+Neighbors@{get\+Neighbors}}
+\index{get\+Neighbors@{get\+Neighbors}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{get\+Neighbors()}{getNeighbors()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Environment\+::get\+Neighbors (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{s,  }\item[{std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_neighbor}{Neighbor}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&}]{neighbors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 313 of file cbs.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a4ae69480c6b9e716f282839dc4f323c0}\label{class_environment_a4ae69480c6b9e716f282839dc4f323c0}} 
+\index{Environment@{Environment}!get\+Neighbors@{get\+Neighbors}}
+\index{get\+Neighbors@{get\+Neighbors}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{get\+Neighbors()}{getNeighbors()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Environment\+::get\+Neighbors (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{s,  }\item[{std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_neighbor}{Neighbor}$<$ \hyperlink{struct_state}{State}, \hyperlink{a__star_8cpp_a8bb1ef53467e4f61410d12822d922498}{Action}, int $>$ $>$ \&}]{neighbors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 381 of file ecbs.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a117b88b2a1e0267cfe28d0a6545af72d}\label{class_environment_a117b88b2a1e0267cfe28d0a6545af72d}} 
+\index{Environment@{Environment}!high\+Level\+Expanded@{high\+Level\+Expanded}}
+\index{high\+Level\+Expanded@{high\+Level\+Expanded}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{high\+Level\+Expanded()}{highLevelExpanded()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Environment\+::high\+Level\+Expanded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 454 of file cbs.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_environment_a117b88b2a1e0267cfe28d0a6545af72d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_environment_a117b88b2a1e0267cfe28d0a6545af72d}\label{class_environment_a117b88b2a1e0267cfe28d0a6545af72d}} 
+\index{Environment@{Environment}!high\+Level\+Expanded@{high\+Level\+Expanded}}
+\index{high\+Level\+Expanded@{high\+Level\+Expanded}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{high\+Level\+Expanded()}{highLevelExpanded()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Environment\+::high\+Level\+Expanded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 523 of file ecbs.\+cpp.
+
+\mbox{\Hypertarget{class_environment_aab14c04c6aaaf6b0d0f26f8b92d44400}\label{class_environment_aab14c04c6aaaf6b0d0f26f8b92d44400}} 
+\index{Environment@{Environment}!is\+Solution@{is\+Solution}}
+\index{is\+Solution@{is\+Solution}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{is\+Solution()}{isSolution()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily bool Environment\+::is\+Solution (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 84 of file a\+\_\+star.\+cpp.
+
+\mbox{\Hypertarget{class_environment_aab14c04c6aaaf6b0d0f26f8b92d44400}\label{class_environment_aab14c04c6aaaf6b0d0f26f8b92d44400}} 
+\index{Environment@{Environment}!is\+Solution@{is\+Solution}}
+\index{is\+Solution@{is\+Solution}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{is\+Solution()}{isSolution()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily bool Environment\+::is\+Solution (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 107 of file a\+\_\+star\+\_\+epsilon.\+cpp.
+
+\mbox{\Hypertarget{class_environment_aab14c04c6aaaf6b0d0f26f8b92d44400}\label{class_environment_aab14c04c6aaaf6b0d0f26f8b92d44400}} 
+\index{Environment@{Environment}!is\+Solution@{is\+Solution}}
+\index{is\+Solution@{is\+Solution}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{is\+Solution()}{isSolution()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily bool Environment\+::is\+Solution (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 308 of file cbs.\+cpp.
+
+\mbox{\Hypertarget{class_environment_aab14c04c6aaaf6b0d0f26f8b92d44400}\label{class_environment_aab14c04c6aaaf6b0d0f26f8b92d44400}} 
+\index{Environment@{Environment}!is\+Solution@{is\+Solution}}
+\index{is\+Solution@{is\+Solution}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{is\+Solution()}{isSolution()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily bool Environment\+::is\+Solution (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 376 of file ecbs.\+cpp.
+
+\mbox{\Hypertarget{class_environment_af870f6d7c69f7401f5d724b0ee60308f}\label{class_environment_af870f6d7c69f7401f5d724b0ee60308f}} 
+\index{Environment@{Environment}!low\+Level\+Expanded@{low\+Level\+Expanded}}
+\index{low\+Level\+Expanded@{low\+Level\+Expanded}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{low\+Level\+Expanded()}{lowLevelExpanded()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Environment\+::low\+Level\+Expanded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 456 of file cbs.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_environment_af870f6d7c69f7401f5d724b0ee60308f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_environment_af870f6d7c69f7401f5d724b0ee60308f}\label{class_environment_af870f6d7c69f7401f5d724b0ee60308f}} 
+\index{Environment@{Environment}!low\+Level\+Expanded@{low\+Level\+Expanded}}
+\index{low\+Level\+Expanded@{low\+Level\+Expanded}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{low\+Level\+Expanded()}{lowLevelExpanded()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Environment\+::low\+Level\+Expanded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 525 of file ecbs.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a0c694f293bf62ef33dab4b878893bacf}\label{class_environment_a0c694f293bf62ef33dab4b878893bacf}} 
+\index{Environment@{Environment}!on\+Discover@{on\+Discover}}
+\index{on\+Discover@{on\+Discover}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{on\+Discover()}{onDiscover()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Environment\+::on\+Discover (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 113 of file a\+\_\+star.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a0c694f293bf62ef33dab4b878893bacf}\label{class_environment_a0c694f293bf62ef33dab4b878893bacf}} 
+\index{Environment@{Environment}!on\+Discover@{on\+Discover}}
+\index{on\+Discover@{on\+Discover}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{on\+Discover()}{onDiscover()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Environment\+::on\+Discover (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 146 of file a\+\_\+star\+\_\+epsilon.\+cpp.
+
+\mbox{\Hypertarget{class_environment_ad8d27db649c723053fe9d90d97c0e4cd}\label{class_environment_ad8d27db649c723053fe9d90d97c0e4cd}} 
+\index{Environment@{Environment}!on\+Expand\+High\+Level\+Node@{on\+Expand\+High\+Level\+Node}}
+\index{on\+Expand\+High\+Level\+Node@{on\+Expand\+High\+Level\+Node}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{on\+Expand\+High\+Level\+Node()}{onExpandHighLevelNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Environment\+::on\+Expand\+High\+Level\+Node (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 447 of file cbs.\+cpp.
+
+\mbox{\Hypertarget{class_environment_ad8d27db649c723053fe9d90d97c0e4cd}\label{class_environment_ad8d27db649c723053fe9d90d97c0e4cd}} 
+\index{Environment@{Environment}!on\+Expand\+High\+Level\+Node@{on\+Expand\+High\+Level\+Node}}
+\index{on\+Expand\+High\+Level\+Node@{on\+Expand\+High\+Level\+Node}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{on\+Expand\+High\+Level\+Node()}{onExpandHighLevelNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Environment\+::on\+Expand\+High\+Level\+Node (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 516 of file ecbs.\+cpp.
+
+\mbox{\Hypertarget{class_environment_ad00ee2a501b1e78f19c86a0d01e49d52}\label{class_environment_ad00ee2a501b1e78f19c86a0d01e49d52}} 
+\index{Environment@{Environment}!on\+Expand\+Low\+Level\+Node@{on\+Expand\+Low\+Level\+Node}}
+\index{on\+Expand\+Low\+Level\+Node@{on\+Expand\+Low\+Level\+Node}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{on\+Expand\+Low\+Level\+Node()}{onExpandLowLevelNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Environment\+::on\+Expand\+Low\+Level\+Node (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 449 of file cbs.\+cpp.
+
+\mbox{\Hypertarget{class_environment_ad00ee2a501b1e78f19c86a0d01e49d52}\label{class_environment_ad00ee2a501b1e78f19c86a0d01e49d52}} 
+\index{Environment@{Environment}!on\+Expand\+Low\+Level\+Node@{on\+Expand\+Low\+Level\+Node}}
+\index{on\+Expand\+Low\+Level\+Node@{on\+Expand\+Low\+Level\+Node}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{on\+Expand\+Low\+Level\+Node()}{onExpandLowLevelNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Environment\+::on\+Expand\+Low\+Level\+Node (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 518 of file ecbs.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a37ccf718e3e1b4540dadbe89f1631ee6}\label{class_environment_a37ccf718e3e1b4540dadbe89f1631ee6}} 
+\index{Environment@{Environment}!on\+Expand\+Node@{on\+Expand\+Node}}
+\index{on\+Expand\+Node@{on\+Expand\+Node}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{on\+Expand\+Node()}{onExpandNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Environment\+::on\+Expand\+Node (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 111 of file a\+\_\+star.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a37ccf718e3e1b4540dadbe89f1631ee6}\label{class_environment_a37ccf718e3e1b4540dadbe89f1631ee6}} 
+\index{Environment@{Environment}!on\+Expand\+Node@{on\+Expand\+Node}}
+\index{on\+Expand\+Node@{on\+Expand\+Node}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{on\+Expand\+Node()}{onExpandNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Environment\+::on\+Expand\+Node (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 144 of file a\+\_\+star\+\_\+epsilon.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a31a390fc46a51b9adab61b2511ef2a31}\label{class_environment_a31a390fc46a51b9adab61b2511ef2a31}} 
+\index{Environment@{Environment}!operator=@{operator=}}
+\index{operator=@{operator=}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{class_environment}{Environment}\& Environment\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_environment}{Environment} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_environment_a31a390fc46a51b9adab61b2511ef2a31}\label{class_environment_a31a390fc46a51b9adab61b2511ef2a31}} 
+\index{Environment@{Environment}!operator=@{operator=}}
+\index{operator=@{operator=}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{class_environment}{Environment}\& Environment\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_environment}{Environment} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_environment_a56b6dff6d3af3fe6404936a14a259c56}\label{class_environment_a56b6dff6d3af3fe6404936a14a259c56}} 
+\index{Environment@{Environment}!set\+Low\+Level\+Context@{set\+Low\+Level\+Context}}
+\index{set\+Low\+Level\+Context@{set\+Low\+Level\+Context}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{set\+Low\+Level\+Context()}{setLowLevelContext()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Environment\+::set\+Low\+Level\+Context (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{agent\+Idx,  }\item[{const \hyperlink{struct_constraints}{Constraints} $\ast$}]{constraints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 287 of file ecbs.\+cpp.
+
+\mbox{\Hypertarget{class_environment_a56b6dff6d3af3fe6404936a14a259c56}\label{class_environment_a56b6dff6d3af3fe6404936a14a259c56}} 
+\index{Environment@{Environment}!set\+Low\+Level\+Context@{set\+Low\+Level\+Context}}
+\index{set\+Low\+Level\+Context@{set\+Low\+Level\+Context}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{set\+Low\+Level\+Context()}{setLowLevelContext()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Environment\+::set\+Low\+Level\+Context (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{agent\+Idx,  }\item[{const \hyperlink{struct_constraints}{Constraints} $\ast$}]{constraints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 287 of file cbs.\+cpp.
+
+\mbox{\Hypertarget{class_environment_ad21a790ab0279b0f5b445e1f460dc971}\label{class_environment_ad21a790ab0279b0f5b445e1f460dc971}} 
+\index{Environment@{Environment}!state\+Valid@{state\+Valid}}
+\index{state\+Valid@{state\+Valid}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{state\+Valid()}{stateValid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Environment\+::state\+Valid (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 116 of file a\+\_\+star.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{class_environment_ad21a790ab0279b0f5b445e1f460dc971_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_environment_ad21a790ab0279b0f5b445e1f460dc971}\label{class_environment_ad21a790ab0279b0f5b445e1f460dc971}} 
+\index{Environment@{Environment}!state\+Valid@{state\+Valid}}
+\index{state\+Valid@{state\+Valid}!Environment@{Environment}}
+\subsubsection{\texorpdfstring{state\+Valid()}{stateValid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Environment\+::state\+Valid (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_state}{State} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 149 of file a\+\_\+star\+\_\+epsilon.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/ecbs/src/\hyperlink{a__star_8cpp}{a\+\_\+star.\+cpp}\item 
+third\+\_\+party/ecbs/src/\hyperlink{a__star__epsilon_8cpp}{a\+\_\+star\+\_\+epsilon.\+cpp}\item 
+third\+\_\+party/ecbs/src/\hyperlink{cbs_8cpp}{cbs.\+cpp}\item 
+third\+\_\+party/ecbs/src/\hyperlink{ecbs_8cpp}{ecbs.\+cpp}\end{DoxyCompactItemize}

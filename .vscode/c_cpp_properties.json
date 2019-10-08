@@ -1,0 +1,52 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/lyw/catkin_ws/devel/include",
+                "/opt/ros/melodic/include",
+                "/home/lyw/catkin_ws/src/atypical_planning/include",
+                "/home/lyw/catkin_ws/src/beginner_tutorials/include",
+                "/home/lyw/catkin_ws/src/eigen_checks/include",
+                "/home/lyw/catkin_ws/src/jsk_visualization/jsk_interactive_markers/jsk_interactive_marker/include",
+                "/home/lyw/catkin_ws/src/learning_tf2/include",
+                "/home/lyw/catkin_ws/src/mavros/libmavconn/include",
+                "/home/lyw/catkin_ws/src/mav_comm/mav_msgs/include",
+                "/home/lyw/catkin_ws/src/mav_comm/mav_planning_msgs/include",
+                "/home/lyw/catkin_ws/src/mavros/mavros/include",
+                "/home/lyw/catkin_ws/src/mavros/mavros_msgs/include",
+                "/home/lyw/catkin_ws/src/minkindr/minkindr/include",
+                "/home/lyw/catkin_ws/src/minkindr_ros/minkindr_conversions/include",
+                "/home/lyw/catkin_ws/src/mpc_atypical/include",
+                "/home/lyw/catkin_ws/src/plan_utils/multi_map_server/include",
+                "/home/lyw/catkin_ws/src/plane_MPC/include",
+                "/home/lyw/catkin_ws/src/plan_utils/pose_utils/include",
+                "/home/lyw/catkin_ws/src/px4_code/include",
+                "/home/lyw/catkin_ws/src/python_bindings_tutorial/include",
+                "/home/lyw/catkin_ws/src/plan_utils/quadrotor_msgs/include",
+                "/home/lyw/catkin_ws/src/ros_tutorials_topic/include",
+                "/home/lyw/catkin_ws/src/rotors_simulator/rotors_control/include",
+                "/home/lyw/catkin_ws/src/rotors_simulator/rotors_gazebo_plugins/include",
+                "/home/lyw/catkin_ws/src/rotors_simulator/rotors_hil_interface/include",
+                "/home/lyw/catkin_ws/src/rotors_simulator/rotors_joy_interface/include",
+                "/home/lyw/catkin_ws/src/mavros/test_mavros/include",
+                "/home/lyw/catkin_ws/src/traj_gen/include",
+                "/home/lyw/catkin_ws/src/voxblox/voxblox/include",
+                "/home/lyw/catkin_ws/src/voxblox/voxblox_ros/include",
+                "/home/lyw/catkin_ws/src/voxblox/voxblox_rviz_plugin/include",
+                "/home/lyw/catkin_ws/src/mpc_atypical/include",
+                "/home/lyw/catkin_ws/src/mpc_atypical/opim_traj_gen/",
+                "/usr/include"
+            ],
+            "name": "Linux",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

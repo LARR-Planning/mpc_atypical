@@ -1,0 +1,114 @@
+\hypertarget{namespacelib_multi_robot_planning}{}\section{lib\+Multi\+Robot\+Planning Namespace Reference}
+\label{namespacelib_multi_robot_planning}\index{lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classlib_multi_robot_planning_1_1_a_star}{A\+Star}
+\begin{DoxyCompactList}\small\item\em A$\ast$ Algorithm to find the shortest path. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_multi_robot_planning_1_1_a_star_epsilon}{A\+Star\+Epsilon}
+\begin{DoxyCompactList}\small\item\em A$\ast$\+\_\+epsilon Algorithm to find the shortest path with a given suboptimality bound (also known as focal search) \end{DoxyCompactList}\item 
+class \hyperlink{classlib_multi_robot_planning_1_1_c_b_s}{C\+BS}
+\begin{DoxyCompactList}\small\item\em Conflict-\/\+Based-\/\+Search (\hyperlink{classlib_multi_robot_planning_1_1_c_b_s}{C\+BS}) algorithm to solve the Multi-\/\+Agent Path-\/\+Finding (M\+A\+PF) problem. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_multi_robot_planning_1_1_conflict}{Conflict}
+\item 
+struct \hyperlink{structlib_multi_robot_planning_1_1_constraints}{Constraints}
+\item 
+class \hyperlink{classlib_multi_robot_planning_1_1_e_c_b_s}{E\+C\+BS}
+\begin{DoxyCompactList}\small\item\em Enhanced Conflict-\/\+Based-\/\+Search (\hyperlink{classlib_multi_robot_planning_1_1_e_c_b_s}{E\+C\+BS}) algorithm to solve the Multi-\/\+Agent Path-\/\+Finding (M\+A\+PF) problem within a given suboptimality bound. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_multi_robot_planning_1_1_edge_constraint}{Edge\+Constraint}
+\item 
+class \hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment}
+\item 
+struct \hyperlink{structlib_multi_robot_planning_1_1_location}{Location}
+\item 
+struct \hyperlink{structlib_multi_robot_planning_1_1_neighbor}{Neighbor}
+\begin{DoxyCompactList}\small\item\em Represents state transations. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}
+\begin{DoxyCompactList}\small\item\em Represents the path for an agent. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_multi_robot_planning_1_1_state}{State}
+\item 
+struct \hyperlink{structlib_multi_robot_planning_1_1_vertex_constraint}{Vertex\+Constraint}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action} \{ \newline
+\hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da258f49887ef8d14ac268c92b02503aaa}{Action\+::\+Up}, 
+\hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da08a38277b0309070706f6652eeae9a53}{Action\+::\+Down}, 
+\hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da945d5e233cf7d6240f6b783b36a374ff}{Action\+::\+Left}, 
+\hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da92b09c7c48c520c3c55e497875da437c}{Action\+::\+Right}, 
+\newline
+\hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053daa4ffdcf0dc1f31b9acaf295d75b51d00}{Action\+::\+Top}, 
+\hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da2ad9d63b69c4a10a5cc9cad923133bc4}{Action\+::\+Bottom}, 
+\hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da0f68101772bd5397ef8eb1b632798652}{Action\+::\+Wait}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{namespacelib_multi_robot_planning_ac64bacf3115f1341bd7ce739c119f00a}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action} \&a)
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}\label{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}} 
+\index{lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}!Action@{Action}}
+\index{Action@{Action}!lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}}
+\subsubsection{\texorpdfstring{Action}{Action}}
+{\footnotesize\ttfamily enum \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{lib\+Multi\+Robot\+Planning\+::\+Action}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Up@{Up}!lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}}\index{lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}!Up@{Up}}}\mbox{\Hypertarget{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da258f49887ef8d14ac268c92b02503aaa}\label{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da258f49887ef8d14ac268c92b02503aaa}} 
+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Down@{Down}!lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}}\index{lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}!Down@{Down}}}\mbox{\Hypertarget{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da08a38277b0309070706f6652eeae9a53}\label{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da08a38277b0309070706f6652eeae9a53}} 
+Down&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Left@{Left}!lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}}\index{lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}!Left@{Left}}}\mbox{\Hypertarget{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da945d5e233cf7d6240f6b783b36a374ff}\label{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da945d5e233cf7d6240f6b783b36a374ff}} 
+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Right@{Right}!lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}}\index{lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}!Right@{Right}}}\mbox{\Hypertarget{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da92b09c7c48c520c3c55e497875da437c}\label{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da92b09c7c48c520c3c55e497875da437c}} 
+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Top@{Top}!lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}}\index{lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}!Top@{Top}}}\mbox{\Hypertarget{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053daa4ffdcf0dc1f31b9acaf295d75b51d00}\label{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053daa4ffdcf0dc1f31b9acaf295d75b51d00}} 
+Top&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bottom@{Bottom}!lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}}\index{lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}!Bottom@{Bottom}}}\mbox{\Hypertarget{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da2ad9d63b69c4a10a5cc9cad923133bc4}\label{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da2ad9d63b69c4a10a5cc9cad923133bc4}} 
+Bottom&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Wait@{Wait}!lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}}\index{lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}!Wait@{Wait}}}\mbox{\Hypertarget{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da0f68101772bd5397ef8eb1b632798652}\label{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053da0f68101772bd5397ef8eb1b632798652}} 
+Wait&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 53 of file environment.\+hpp.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacelib_multi_robot_planning_ac64bacf3115f1341bd7ce739c119f00a}\label{namespacelib_multi_robot_planning_ac64bacf3115f1341bd7ce739c119f00a}} 
+\index{lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!lib\+Multi\+Robot\+Planning@{lib\+Multi\+Robot\+Planning}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& lib\+Multi\+Robot\+Planning\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action} \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 63 of file environment.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelib_multi_robot_planning_ac64bacf3115f1341bd7ce739c119f00a_icgraph}
+\end{center}
+\end{figure}

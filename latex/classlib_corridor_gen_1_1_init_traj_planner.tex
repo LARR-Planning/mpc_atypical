@@ -1,0 +1,212 @@
+\hypertarget{classlib_corridor_gen_1_1_init_traj_planner}{}\section{lib\+Corridor\+Gen\+:\+:Init\+Traj\+Planner Class Reference}
+\label{classlib_corridor_gen_1_1_init_traj_planner}\index{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}}
+
+
+{\ttfamily \#include $<$init\+\_\+traj\+\_\+planner.\+hpp$>$}
+
+
+
+Inheritance diagram for lib\+Corridor\+Gen\+:\+:Init\+Traj\+Planner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classlib_corridor_gen_1_1_init_traj_planner__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for lib\+Corridor\+Gen\+:\+:Init\+Traj\+Planner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classlib_corridor_gen_1_1_init_traj_planner__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classlib_corridor_gen_1_1_init_traj_planner_acfc10a68eddb236a10790c4d92473d99}{update} (bool log)=0
+\item 
+\hyperlink{classlib_corridor_gen_1_1_init_traj_planner_a0ed77a8c723523592a3c2281dc576b17}{Init\+Traj\+Planner} (std\+::shared\+\_\+ptr$<$ octomap\+::\+Oc\+Tree $>$ \+\_\+octree\+\_\+obj, \hyperlink{classlib_corridor_gen_1_1_param}{Param} \+\_\+param)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{corridor__common_8hpp_a5505ba29bfa7d0966513cc22822f80f0}{init\+Traj\+\_\+t} \hyperlink{classlib_corridor_gen_1_1_init_traj_planner_a26893ea85eb9d4270ff6920a5c9804a4}{init\+Traj}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{classlib_corridor_gen_1_1_init_traj_planner_a245efac6cad8f5cac6a09c99dcaf8cbd}{T}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ octomap\+::\+Oc\+Tree $>$ \hyperlink{classlib_corridor_gen_1_1_init_traj_planner_a65b1c7c71ee2e55f5e8f7fc1594ba5c9}{octree\+\_\+obj}
+\item 
+\hyperlink{classlib_corridor_gen_1_1_param}{Param} \hyperlink{classlib_corridor_gen_1_1_init_traj_planner_a2c750ddb7bf244207d43661bda42e1fc}{param}
+\item 
+double \hyperlink{classlib_corridor_gen_1_1_init_traj_planner_aeb9655c063038a5842fb0b37c52b13dd}{grid\+\_\+x\+\_\+min}
+\item 
+double \hyperlink{classlib_corridor_gen_1_1_init_traj_planner_aeee7d6390274ab012a2e2158807d0c39}{grid\+\_\+y\+\_\+min}
+\item 
+double \hyperlink{classlib_corridor_gen_1_1_init_traj_planner_ae02d30b4edf55e3c26a768681403002c}{grid\+\_\+x\+\_\+max}
+\item 
+double \hyperlink{classlib_corridor_gen_1_1_init_traj_planner_a57a231a6bda58e0d1f281e61c8a9ac5e}{grid\+\_\+y\+\_\+max}
+\item 
+int \hyperlink{classlib_corridor_gen_1_1_init_traj_planner_a3575a01c82d6d07c08de34219455ef5d}{dimx}
+\item 
+int \hyperlink{classlib_corridor_gen_1_1_init_traj_planner_ad74c8d5ea299747a09ec949ccb01fa11}{dimy}
+\item 
+int \hyperlink{classlib_corridor_gen_1_1_init_traj_planner_a3a1684481f8489002dfd1c66c01ccb56}{dimz}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file init\+\_\+traj\+\_\+planner.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlib_corridor_gen_1_1_init_traj_planner_a0ed77a8c723523592a3c2281dc576b17}\label{classlib_corridor_gen_1_1_init_traj_planner_a0ed77a8c723523592a3c2281dc576b17}} 
+\index{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}!Init\+Traj\+Planner@{Init\+Traj\+Planner}}
+\index{Init\+Traj\+Planner@{Init\+Traj\+Planner}!lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}}
+\subsubsection{\texorpdfstring{Init\+Traj\+Planner()}{InitTrajPlanner()}}
+{\footnotesize\ttfamily lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner\+::\+Init\+Traj\+Planner (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ octomap\+::\+Oc\+Tree $>$}]{\+\_\+octree\+\_\+obj,  }\item[{\hyperlink{classlib_corridor_gen_1_1_param}{Param}}]{\+\_\+param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 14 of file init\+\_\+traj\+\_\+planner.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_corridor_gen_1_1_init_traj_planner_acfc10a68eddb236a10790c4d92473d99}\label{classlib_corridor_gen_1_1_init_traj_planner_acfc10a68eddb236a10790c4d92473d99}} 
+\index{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}!update@{update}}
+\index{update@{update}!lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual bool lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner\+::update (\begin{DoxyParamCaption}\item[{bool}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classlib_corridor_gen_1_1_e_c_b_s_planner_a0d4c5855c02228c677b3d2d89c10740c}{lib\+Corridor\+Gen\+::\+E\+C\+B\+S\+Planner}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classlib_corridor_gen_1_1_init_traj_planner_a3575a01c82d6d07c08de34219455ef5d}\label{classlib_corridor_gen_1_1_init_traj_planner_a3575a01c82d6d07c08de34219455ef5d}} 
+\index{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}!dimx@{dimx}}
+\index{dimx@{dimx}!lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}}
+\subsubsection{\texorpdfstring{dimx}{dimx}}
+{\footnotesize\ttfamily int lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner\+::dimx\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 34 of file init\+\_\+traj\+\_\+planner.\+hpp.
+
+\mbox{\Hypertarget{classlib_corridor_gen_1_1_init_traj_planner_ad74c8d5ea299747a09ec949ccb01fa11}\label{classlib_corridor_gen_1_1_init_traj_planner_ad74c8d5ea299747a09ec949ccb01fa11}} 
+\index{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}!dimy@{dimy}}
+\index{dimy@{dimy}!lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}}
+\subsubsection{\texorpdfstring{dimy}{dimy}}
+{\footnotesize\ttfamily int lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner\+::dimy\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 34 of file init\+\_\+traj\+\_\+planner.\+hpp.
+
+\mbox{\Hypertarget{classlib_corridor_gen_1_1_init_traj_planner_a3a1684481f8489002dfd1c66c01ccb56}\label{classlib_corridor_gen_1_1_init_traj_planner_a3a1684481f8489002dfd1c66c01ccb56}} 
+\index{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}!dimz@{dimz}}
+\index{dimz@{dimz}!lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}}
+\subsubsection{\texorpdfstring{dimz}{dimz}}
+{\footnotesize\ttfamily int lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner\+::dimz\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 34 of file init\+\_\+traj\+\_\+planner.\+hpp.
+
+\mbox{\Hypertarget{classlib_corridor_gen_1_1_init_traj_planner_ae02d30b4edf55e3c26a768681403002c}\label{classlib_corridor_gen_1_1_init_traj_planner_ae02d30b4edf55e3c26a768681403002c}} 
+\index{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}!grid\+\_\+x\+\_\+max@{grid\+\_\+x\+\_\+max}}
+\index{grid\+\_\+x\+\_\+max@{grid\+\_\+x\+\_\+max}!lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}}
+\subsubsection{\texorpdfstring{grid\+\_\+x\+\_\+max}{grid\_x\_max}}
+{\footnotesize\ttfamily double lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner\+::grid\+\_\+x\+\_\+max\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 33 of file init\+\_\+traj\+\_\+planner.\+hpp.
+
+\mbox{\Hypertarget{classlib_corridor_gen_1_1_init_traj_planner_aeb9655c063038a5842fb0b37c52b13dd}\label{classlib_corridor_gen_1_1_init_traj_planner_aeb9655c063038a5842fb0b37c52b13dd}} 
+\index{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}!grid\+\_\+x\+\_\+min@{grid\+\_\+x\+\_\+min}}
+\index{grid\+\_\+x\+\_\+min@{grid\+\_\+x\+\_\+min}!lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}}
+\subsubsection{\texorpdfstring{grid\+\_\+x\+\_\+min}{grid\_x\_min}}
+{\footnotesize\ttfamily double lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner\+::grid\+\_\+x\+\_\+min\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 33 of file init\+\_\+traj\+\_\+planner.\+hpp.
+
+\mbox{\Hypertarget{classlib_corridor_gen_1_1_init_traj_planner_a57a231a6bda58e0d1f281e61c8a9ac5e}\label{classlib_corridor_gen_1_1_init_traj_planner_a57a231a6bda58e0d1f281e61c8a9ac5e}} 
+\index{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}!grid\+\_\+y\+\_\+max@{grid\+\_\+y\+\_\+max}}
+\index{grid\+\_\+y\+\_\+max@{grid\+\_\+y\+\_\+max}!lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}}
+\subsubsection{\texorpdfstring{grid\+\_\+y\+\_\+max}{grid\_y\_max}}
+{\footnotesize\ttfamily double lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner\+::grid\+\_\+y\+\_\+max\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 33 of file init\+\_\+traj\+\_\+planner.\+hpp.
+
+\mbox{\Hypertarget{classlib_corridor_gen_1_1_init_traj_planner_aeee7d6390274ab012a2e2158807d0c39}\label{classlib_corridor_gen_1_1_init_traj_planner_aeee7d6390274ab012a2e2158807d0c39}} 
+\index{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}!grid\+\_\+y\+\_\+min@{grid\+\_\+y\+\_\+min}}
+\index{grid\+\_\+y\+\_\+min@{grid\+\_\+y\+\_\+min}!lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}}
+\subsubsection{\texorpdfstring{grid\+\_\+y\+\_\+min}{grid\_y\_min}}
+{\footnotesize\ttfamily double lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner\+::grid\+\_\+y\+\_\+min\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 33 of file init\+\_\+traj\+\_\+planner.\+hpp.
+
+\mbox{\Hypertarget{classlib_corridor_gen_1_1_init_traj_planner_a26893ea85eb9d4270ff6920a5c9804a4}\label{classlib_corridor_gen_1_1_init_traj_planner_a26893ea85eb9d4270ff6920a5c9804a4}} 
+\index{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}!init\+Traj@{init\+Traj}}
+\index{init\+Traj@{init\+Traj}!lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}}
+\subsubsection{\texorpdfstring{init\+Traj}{initTraj}}
+{\footnotesize\ttfamily \hyperlink{corridor__common_8hpp_a5505ba29bfa7d0966513cc22822f80f0}{init\+Traj\+\_\+t} lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner\+::init\+Traj}
+
+
+
+Definition at line 9 of file init\+\_\+traj\+\_\+planner.\+hpp.
+
+\mbox{\Hypertarget{classlib_corridor_gen_1_1_init_traj_planner_a65b1c7c71ee2e55f5e8f7fc1594ba5c9}\label{classlib_corridor_gen_1_1_init_traj_planner_a65b1c7c71ee2e55f5e8f7fc1594ba5c9}} 
+\index{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}!octree\+\_\+obj@{octree\+\_\+obj}}
+\index{octree\+\_\+obj@{octree\+\_\+obj}!lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}}
+\subsubsection{\texorpdfstring{octree\+\_\+obj}{octree\_obj}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$octomap\+::\+Oc\+Tree$>$ lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner\+::octree\+\_\+obj\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 30 of file init\+\_\+traj\+\_\+planner.\+hpp.
+
+\mbox{\Hypertarget{classlib_corridor_gen_1_1_init_traj_planner_a2c750ddb7bf244207d43661bda42e1fc}\label{classlib_corridor_gen_1_1_init_traj_planner_a2c750ddb7bf244207d43661bda42e1fc}} 
+\index{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}!param@{param}}
+\index{param@{param}!lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}}
+\subsubsection{\texorpdfstring{param}{param}}
+{\footnotesize\ttfamily \hyperlink{classlib_corridor_gen_1_1_param}{Param} lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner\+::param\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 31 of file init\+\_\+traj\+\_\+planner.\+hpp.
+
+\mbox{\Hypertarget{classlib_corridor_gen_1_1_init_traj_planner_a245efac6cad8f5cac6a09c99dcaf8cbd}\label{classlib_corridor_gen_1_1_init_traj_planner_a245efac6cad8f5cac6a09c99dcaf8cbd}} 
+\index{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}!T@{T}}
+\index{T@{T}!lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner@{lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner}}
+\subsubsection{\texorpdfstring{T}{T}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ lib\+Corridor\+Gen\+::\+Init\+Traj\+Planner\+::T}
+
+
+
+Definition at line 10 of file init\+\_\+traj\+\_\+planner.\+hpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{init__traj__planner_8hpp}{init\+\_\+traj\+\_\+planner.\+hpp}\end{DoxyCompactItemize}

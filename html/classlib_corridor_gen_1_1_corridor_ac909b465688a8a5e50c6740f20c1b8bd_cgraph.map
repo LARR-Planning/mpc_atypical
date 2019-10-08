@@ -1,0 +1,4 @@
+<map id="libCorridorGen::Corridor::update" name="libCorridorGen::Corridor::update">
+<area shape="rect" id="node2" href="$class_timer.html#a63f0eb44b27402196590a03781515dba" title="Timer::stop" alt="" coords="247,5,335,32"/>
+<area shape="rect" id="node3" href="$class_timer.html#ab98eee549aa6c69eb83de41ed555d1e0" title="Timer::elapsedSeconds" alt="" coords="212,56,371,83"/>
+</map>

@@ -1,0 +1,53 @@
+This library contains implementations of search algorithms in C++(14). The library is header only and uses templates.
+
+\subsection*{Supported Algorithms}
+
+\subsubsection*{Single-\/\+Robot}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Algorithm }&\textbf{ Optimality  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Algorithm }&\textbf{ Optimality  }\\\cline{1-2}
+\endhead
+\hyperlink{classlib_multi_robot_planning_1_1_a_star}{A$\ast$} &optimal \\\cline{1-2}
+\hyperlink{classlib_multi_robot_planning_1_1_a_star_epsilon}{A$\ast$\+\_\+epsilon} &w-\/bounded suboptimal \\\cline{1-2}
+S\+I\+PP &optimal \\\cline{1-2}
+\end{longtabu}
+\subsubsection*{Multi-\/\+Robot}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Algorithm }&\textbf{ Optimality  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Algorithm }&\textbf{ Optimality  }\\\cline{1-2}
+\endhead
+\hyperlink{classlib_multi_robot_planning_1_1_c_b_s}{Conflict-\/\+Based Search (C\+BS)} &optimal (sum-\/of-\/cost) \\\cline{1-2}
+\hyperlink{classlib_multi_robot_planning_1_1_e_c_b_s}{Enhanced Conflict-\/\+Based Search (E\+C\+BS)} &w-\/bounded suboptimal (sum-\/of-\/cost) \\\cline{1-2}
+Conflict-\/\+Based Search with Optimal Task Assignment (C\+B\+S-\/\+TA) &optimal (sum-\/of-\/cost) \\\cline{1-2}
+Enhanced Conflict-\/\+Based Search with Optimal Task Assignment (E\+C\+B\+S-\/\+TA) &w-\/bounded suboptimal (sum-\/of-\/cost) \\\cline{1-2}
+\mbox{[}Prioritized Planning with S\+I\+PP\mbox{]} &No \\\cline{1-2}
+\end{longtabu}
+\subsubsection*{Assignment}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Algorithm }&\textbf{ Optimality  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Algorithm }&\textbf{ Optimality  }\\\cline{1-2}
+\endhead
+Best Assignment (Network flow based) &optimal (sum-\/of-\/cost) \\\cline{1-2}
+Next Best Assignment &series of optimal solutions (sum-\/of-\/cost) \\\cline{1-2}
+\end{longtabu}

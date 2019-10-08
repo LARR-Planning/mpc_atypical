@@ -1,0 +1,121 @@
+\hypertarget{classlib_multi_robot_planning_1_1_c_b_s}{}\section{lib\+Multi\+Robot\+Planning\+:\+:C\+BS$<$ State, Action, Cost, Conflict, Constraints, Environment $>$ Class Template Reference}
+\label{classlib_multi_robot_planning_1_1_c_b_s}\index{lib\+Multi\+Robot\+Planning\+::\+C\+B\+S$<$ State, Action, Cost, Conflict, Constraints, Environment $>$@{lib\+Multi\+Robot\+Planning\+::\+C\+B\+S$<$ State, Action, Cost, Conflict, Constraints, Environment $>$}}
+
+
+Conflict-\/\+Based-\/\+Search (\hyperlink{classlib_multi_robot_planning_1_1_c_b_s}{C\+BS}) algorithm to solve the Multi-\/\+Agent Path-\/\+Finding (M\+A\+PF) problem.  
+
+
+
+
+{\ttfamily \#include $<$cbs.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlib_multi_robot_planning_1_1_c_b_s_ad83ae3366ad3bfc2a7582ca53450ad97}{C\+BS} (\hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment} \&environment)
+\item 
+bool \hyperlink{classlib_multi_robot_planning_1_1_c_b_s_a09eec524489ee5cfbf66c95a951d7bbe}{search} (const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State} $>$ \&initial\+States, std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost $>$ $>$ \&solution)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename State, typename Action, typename Cost, typename Conflict, typename Constraints, typename Environment$>$\newline
+class lib\+Multi\+Robot\+Planning\+::\+C\+B\+S$<$ State, Action, Cost, Conflict, Constraints, Environment $>$}
+
+Conflict-\/\+Based-\/\+Search (\hyperlink{classlib_multi_robot_planning_1_1_c_b_s}{C\+BS}) algorithm to solve the Multi-\/\+Agent Path-\/\+Finding (M\+A\+PF) problem. 
+
+This class implements the Conflict-\/\+Based-\/\+Search (\hyperlink{classlib_multi_robot_planning_1_1_c_b_s}{C\+BS}) algorithm. This algorithm can find collision-\/free path for multiple agents with start and goal locations given for each agent. \hyperlink{classlib_multi_robot_planning_1_1_c_b_s}{C\+BS} is a two-\/level search. On the low-\/level, A$\ast$ is used to find paths for individual agents (ideally using a perfect heuristic). The high-\/level is a tree-\/search that resolves conflicts between agents as they occur, earliest conflict-\/time first. \hyperlink{classlib_multi_robot_planning_1_1_c_b_s}{C\+BS} is optimal with respect to the sum-\/of-\/individual costs.
+
+Details of the algorithm can be found in the following paper\+:~\newline
+Guni Sharon, Roni Stern, Ariel Felner, Nathan R. Sturtevant\+:~\newline
+\char`\"{}\+Conflict-\/based search for optimal multi-\/agent pathfinding\char`\"{}. Artif. Intell. 219\+: 40-\/66 (2015)~\newline
+\href{https://doi.org/10.1016/j.artint.2014.11.006}{\tt https\+://doi.\+org/10.\+1016/j.\+artint.\+2014.\+11.\+006}
+
+The underlying A$\ast$ can either use a fibonacci heap, or a d-\/ary heap. The latter is the default. Define \char`\"{}\+U\+S\+E\+\_\+\+F\+I\+B\+O\+N\+A\+C\+C\+I\+\_\+\+H\+E\+A\+P\char`\"{} to use the fibonacci heap instead.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em \hyperlink{structlib_multi_robot_planning_1_1_state}{State}} & Custom state for the search. Needs to be copy\textquotesingle{}able \\
+\hline
+{\em Action} & Custom action for the search. Needs to be copy\textquotesingle{}able \\
+\hline
+{\em Cost} & Custom Cost type (integer or floating point types) \\
+\hline
+{\em \hyperlink{structlib_multi_robot_planning_1_1_conflict}{Conflict}} & Custom conflict description. A conflict needs to be able to be transformed into a constraint. \\
+\hline
+{\em \hyperlink{structlib_multi_robot_planning_1_1_constraints}{Constraints}} & Custom constraint description. The \hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment} needs to be able to search on the low-\/level while taking the constraints into account. \\
+\hline
+{\em \hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment}} & This class needs to provide the custom logic. In particular, it needs to support the following functions\+:
+\begin{DoxyItemize}
+\item {\ttfamily void set\+Low\+Level\+Context(size\+\_\+t agent\+Idx, const Constraints$\ast$ constraints)}~\newline
+ Set the current context to a particular agent with the given set of constraints
+\item {\ttfamily Cost admissible\+Heuristic(const State\& s)}~\newline
+ Admissible heuristic. Needs to take current context into account.
+\item {\ttfamily bool is\+Solution(const State\& s)}~\newline
+ Return true if the given state is a goal state for the current agent.
+\item {\ttfamily void get\+Neighbors(const \hyperlink{structlib_multi_robot_planning_1_1_state}{State}\& s, std\+::vector$<$\hyperlink{structlib_multi_robot_planning_1_1_neighbor}{Neighbor}$<$\hyperlink{structlib_multi_robot_planning_1_1_state}{State}, Action, int$>$ $>$\& neighbors)}~\newline
+ Fill the list of neighboring state for the given state s and the current agent.
+\item {\ttfamily bool get\+First\+Conflict(const std\+::vector$<$\hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$\hyperlink{structlib_multi_robot_planning_1_1_state}{State}, Action, int$>$ $>$\& solution, \hyperlink{structlib_multi_robot_planning_1_1_conflict}{Conflict}\& result)}~\newline
+ Finds the first conflict for the given solution for each agent. Return true if a conflict was found and false otherwise.
+\item {\ttfamily void create\+Constraints\+From\+Conflict(const \hyperlink{structlib_multi_robot_planning_1_1_conflict}{Conflict}\& conflict, std\+::map$<$size\+\_\+t, \hyperlink{structlib_multi_robot_planning_1_1_constraints}{Constraints}$>$\& constraints)}~\newline
+ Create a list of constraints for the given conflict.
+\item {\ttfamily void on\+Expand\+High\+Level\+Node(\+Cost cost)}~\newline
+ This function is called on every high-\/level expansion and can be used for statistical purposes.
+\item {\ttfamily void on\+Expand\+Low\+Level\+Node(const State\& s, Cost f\+Score, Cost g\+Score)}~\newline
+ This function is called on every low-\/level expansion and can be used for statistical purposes. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 81 of file cbs.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_c_b_s_ad83ae3366ad3bfc2a7582ca53450ad97}\label{classlib_multi_robot_planning_1_1_c_b_s_ad83ae3366ad3bfc2a7582ca53450ad97}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+C\+BS@{lib\+Multi\+Robot\+Planning\+::\+C\+BS}!C\+BS@{C\+BS}}
+\index{C\+BS@{C\+BS}!lib\+Multi\+Robot\+Planning\+::\+C\+BS@{lib\+Multi\+Robot\+Planning\+::\+C\+BS}}
+\subsubsection{\texorpdfstring{C\+B\+S()}{CBS()}}
+{\footnotesize\ttfamily template$<$typename State, typename Action, typename Cost, typename Conflict, typename Constraints, typename Environment$>$ \\
+\hyperlink{classlib_multi_robot_planning_1_1_c_b_s}{lib\+Multi\+Robot\+Planning\+::\+C\+BS}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost, \hyperlink{structlib_multi_robot_planning_1_1_conflict}{Conflict}, \hyperlink{structlib_multi_robot_planning_1_1_constraints}{Constraints}, \hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment} $>$\+::\hyperlink{classlib_multi_robot_planning_1_1_c_b_s}{C\+BS} (\begin{DoxyParamCaption}\item[{\hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment} \&}]{environment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 83 of file cbs.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_c_b_s_a09eec524489ee5cfbf66c95a951d7bbe}\label{classlib_multi_robot_planning_1_1_c_b_s_a09eec524489ee5cfbf66c95a951d7bbe}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+C\+BS@{lib\+Multi\+Robot\+Planning\+::\+C\+BS}!search@{search}}
+\index{search@{search}!lib\+Multi\+Robot\+Planning\+::\+C\+BS@{lib\+Multi\+Robot\+Planning\+::\+C\+BS}}
+\subsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily template$<$typename State, typename Action, typename Cost, typename Conflict, typename Constraints, typename Environment$>$ \\
+bool \hyperlink{classlib_multi_robot_planning_1_1_c_b_s}{lib\+Multi\+Robot\+Planning\+::\+C\+BS}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost, \hyperlink{structlib_multi_robot_planning_1_1_conflict}{Conflict}, \hyperlink{structlib_multi_robot_planning_1_1_constraints}{Constraints}, \hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment} $>$\+::search (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State} $>$ \&}]{initial\+States,  }\item[{std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost $>$ $>$ \&}]{solution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 85 of file cbs.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlib_multi_robot_planning_1_1_c_b_s_a09eec524489ee5cfbf66c95a951d7bbe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{classlib_multi_robot_planning_1_1_c_b_s_a09eec524489ee5cfbf66c95a951d7bbe_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/ecbs/include/\hyperlink{cbs_8hpp}{cbs.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,96 @@
+\hypertarget{structlib_multi_robot_planning_1_1_constraints}{}\section{lib\+Multi\+Robot\+Planning\+:\+:Constraints Struct Reference}
+\label{structlib_multi_robot_planning_1_1_constraints}\index{lib\+Multi\+Robot\+Planning\+::\+Constraints@{lib\+Multi\+Robot\+Planning\+::\+Constraints}}
+
+
+{\ttfamily \#include $<$environment.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structlib_multi_robot_planning_1_1_constraints_a62073ccf7e07c6ad80ec809affdf3a81}{add} (const \hyperlink{structlib_multi_robot_planning_1_1_constraints}{Constraints} \&other)
+\item 
+bool \hyperlink{structlib_multi_robot_planning_1_1_constraints_a572feb308aed241ee52970e0ac2a1c16}{overlap} (const \hyperlink{structlib_multi_robot_planning_1_1_constraints}{Constraints} \&other)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+set$<$ \hyperlink{structlib_multi_robot_planning_1_1_vertex_constraint}{Vertex\+Constraint} $>$ \hyperlink{structlib_multi_robot_planning_1_1_constraints_a1eeb8ac7de1947d7cbde33d24d2afefe}{vertex\+Constraints}
+\item 
+std\+::unordered\+\_\+set$<$ \hyperlink{structlib_multi_robot_planning_1_1_edge_constraint}{Edge\+Constraint} $>$ \hyperlink{structlib_multi_robot_planning_1_1_constraints_aec17e4c178b74398a68c1ad9a5d866b4}{edge\+Constraints}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{structlib_multi_robot_planning_1_1_constraints_a609a032077973e41f300c88a62d8f6fa}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{structlib_multi_robot_planning_1_1_constraints}{Constraints} \&c)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 208 of file environment.\+hpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structlib_multi_robot_planning_1_1_constraints_a62073ccf7e07c6ad80ec809affdf3a81}\label{structlib_multi_robot_planning_1_1_constraints_a62073ccf7e07c6ad80ec809affdf3a81}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Constraints@{lib\+Multi\+Robot\+Planning\+::\+Constraints}!add@{add}}
+\index{add@{add}!lib\+Multi\+Robot\+Planning\+::\+Constraints@{lib\+Multi\+Robot\+Planning\+::\+Constraints}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void lib\+Multi\+Robot\+Planning\+::\+Constraints\+::add (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_multi_robot_planning_1_1_constraints}{Constraints} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 212 of file environment.\+hpp.
+
+\mbox{\Hypertarget{structlib_multi_robot_planning_1_1_constraints_a572feb308aed241ee52970e0ac2a1c16}\label{structlib_multi_robot_planning_1_1_constraints_a572feb308aed241ee52970e0ac2a1c16}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Constraints@{lib\+Multi\+Robot\+Planning\+::\+Constraints}!overlap@{overlap}}
+\index{overlap@{overlap}!lib\+Multi\+Robot\+Planning\+::\+Constraints@{lib\+Multi\+Robot\+Planning\+::\+Constraints}}
+\subsubsection{\texorpdfstring{overlap()}{overlap()}}
+{\footnotesize\ttfamily bool lib\+Multi\+Robot\+Planning\+::\+Constraints\+::overlap (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_multi_robot_planning_1_1_constraints}{Constraints} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 219 of file environment.\+hpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{structlib_multi_robot_planning_1_1_constraints_a609a032077973e41f300c88a62d8f6fa}\label{structlib_multi_robot_planning_1_1_constraints_a609a032077973e41f300c88a62d8f6fa}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Constraints@{lib\+Multi\+Robot\+Planning\+::\+Constraints}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!lib\+Multi\+Robot\+Planning\+::\+Constraints@{lib\+Multi\+Robot\+Planning\+::\+Constraints}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{structlib_multi_robot_planning_1_1_constraints}{Constraints} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 233 of file environment.\+hpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structlib_multi_robot_planning_1_1_constraints_aec17e4c178b74398a68c1ad9a5d866b4}\label{structlib_multi_robot_planning_1_1_constraints_aec17e4c178b74398a68c1ad9a5d866b4}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Constraints@{lib\+Multi\+Robot\+Planning\+::\+Constraints}!edge\+Constraints@{edge\+Constraints}}
+\index{edge\+Constraints@{edge\+Constraints}!lib\+Multi\+Robot\+Planning\+::\+Constraints@{lib\+Multi\+Robot\+Planning\+::\+Constraints}}
+\subsubsection{\texorpdfstring{edge\+Constraints}{edgeConstraints}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$\hyperlink{structlib_multi_robot_planning_1_1_edge_constraint}{Edge\+Constraint}$>$ lib\+Multi\+Robot\+Planning\+::\+Constraints\+::edge\+Constraints}
+
+
+
+Definition at line 210 of file environment.\+hpp.
+
+\mbox{\Hypertarget{structlib_multi_robot_planning_1_1_constraints_a1eeb8ac7de1947d7cbde33d24d2afefe}\label{structlib_multi_robot_planning_1_1_constraints_a1eeb8ac7de1947d7cbde33d24d2afefe}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Constraints@{lib\+Multi\+Robot\+Planning\+::\+Constraints}!vertex\+Constraints@{vertex\+Constraints}}
+\index{vertex\+Constraints@{vertex\+Constraints}!lib\+Multi\+Robot\+Planning\+::\+Constraints@{lib\+Multi\+Robot\+Planning\+::\+Constraints}}
+\subsubsection{\texorpdfstring{vertex\+Constraints}{vertexConstraints}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$\hyperlink{structlib_multi_robot_planning_1_1_vertex_constraint}{Vertex\+Constraint}$>$ lib\+Multi\+Robot\+Planning\+::\+Constraints\+::vertex\+Constraints}
+
+
+
+Definition at line 209 of file environment.\+hpp.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/ecbs/include/\hyperlink{environment_8hpp}{environment.\+hpp}\end{DoxyCompactItemize}

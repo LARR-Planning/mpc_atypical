@@ -1,0 +1,315 @@
+\hypertarget{classlib_multi_robot_planning_1_1_environment}{}\section{lib\+Multi\+Robot\+Planning\+:\+:Environment Class Reference}
+\label{classlib_multi_robot_planning_1_1_environment}\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+
+
+{\ttfamily \#include $<$environment.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlib_multi_robot_planning_1_1_environment_a9206e2bb7f685366383be977bba38979}{Environment} (size\+\_\+t dimx, size\+\_\+t dimy, size\+\_\+t dimz, std\+::unordered\+\_\+set$<$ \hyperlink{structlib_multi_robot_planning_1_1_location}{Location} $>$ obstacles, std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_location}{Location} $>$ goals, std\+::vector$<$ double $>$ quad\+\_\+size, double grid\+\_\+size)
+\item 
+\hyperlink{classlib_multi_robot_planning_1_1_environment_a03a78ae30f71dcd77189ca11756c97d1}{Environment} (const \hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment} \&)=delete
+\item 
+\hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment} \& \hyperlink{classlib_multi_robot_planning_1_1_environment_afaf6184a779ac88068b4d405080d055c}{operator=} (const \hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment} \&)=delete
+\item 
+void \hyperlink{classlib_multi_robot_planning_1_1_environment_a7a664e26155157d558e0755204b74d11}{set\+Low\+Level\+Context} (size\+\_\+t agent\+Idx, const \hyperlink{structlib_multi_robot_planning_1_1_constraints}{Constraints} $\ast$constraints)
+\item 
+int \hyperlink{classlib_multi_robot_planning_1_1_environment_a125ea447e414ab365fea0eead52e47d7}{admissible\+Heuristic} (const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&s)
+\item 
+int \hyperlink{classlib_multi_robot_planning_1_1_environment_ac76b52b63f0bfbdde9dc6fed2520a0b6}{focal\+State\+Heuristic} (const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&s, int, const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, int $>$ $>$ \&solution)
+\item 
+int \hyperlink{classlib_multi_robot_planning_1_1_environment_adf9e6ca87f829fd0fdc185d85b29bb4e}{focal\+Transition\+Heuristic} (const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&s1a, const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&s1b, int, int, const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, int $>$ $>$ \&solution)
+\item 
+int \hyperlink{classlib_multi_robot_planning_1_1_environment_a7854e1df446e52051492b724c0416956}{focal\+Heuristic} (const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, int $>$ $>$ \&solution)
+\item 
+bool \hyperlink{classlib_multi_robot_planning_1_1_environment_a397c066a4202f0dccbb1346e2e3c8338}{is\+Solution} (const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&s)
+\item 
+void \hyperlink{classlib_multi_robot_planning_1_1_environment_ad0f11d7a4b91ea3d7f7fa39b9ffe9758}{get\+Neighbors} (const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&s, std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_neighbor}{Neighbor}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, int $>$ $>$ \&neighbors)
+\item 
+bool \hyperlink{classlib_multi_robot_planning_1_1_environment_a1d47448bd35c1f46f70c6b7fa37e8146}{get\+First\+Conflict} (const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, int $>$ $>$ \&solution, \hyperlink{structlib_multi_robot_planning_1_1_conflict}{Conflict} \&result)
+\item 
+void \hyperlink{classlib_multi_robot_planning_1_1_environment_a34aca235da8a5a1389ec71507c4191af}{create\+Constraints\+From\+Conflict} (const \hyperlink{structlib_multi_robot_planning_1_1_conflict}{Conflict} \&conflict, std\+::map$<$ size\+\_\+t, \hyperlink{structlib_multi_robot_planning_1_1_constraints}{Constraints} $>$ \&constraints)
+\item 
+void \hyperlink{classlib_multi_robot_planning_1_1_environment_a5ce6ca98a37286cfe865b2b52b6c65aa}{on\+Expand\+High\+Level\+Node} (int)
+\item 
+void \hyperlink{classlib_multi_robot_planning_1_1_environment_a022450370c58811b6407650e72a11230}{on\+Expand\+Low\+Level\+Node} (const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&, int, int)
+\item 
+int \hyperlink{classlib_multi_robot_planning_1_1_environment_ad3e27d5501dc54151814e015373e3ef7}{high\+Level\+Expanded} ()
+\item 
+int \hyperlink{classlib_multi_robot_planning_1_1_environment_a9dfe6761bd0b6d25628146cabfc08952}{low\+Level\+Expanded} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 279 of file environment.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_environment_a9206e2bb7f685366383be977bba38979}\label{classlib_multi_robot_planning_1_1_environment_a9206e2bb7f685366383be977bba38979}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}!Environment@{Environment}}
+\index{Environment@{Environment}!lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+\subsubsection{\texorpdfstring{Environment()}{Environment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily lib\+Multi\+Robot\+Planning\+::\+Environment\+::\+Environment (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{dimx,  }\item[{size\+\_\+t}]{dimy,  }\item[{size\+\_\+t}]{dimz,  }\item[{std\+::unordered\+\_\+set$<$ \hyperlink{structlib_multi_robot_planning_1_1_location}{Location} $>$}]{obstacles,  }\item[{std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_location}{Location} $>$}]{goals,  }\item[{std\+::vector$<$ double $>$}]{quad\+\_\+size,  }\item[{double}]{grid\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 281 of file environment.\+hpp.
+
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_environment_a03a78ae30f71dcd77189ca11756c97d1}\label{classlib_multi_robot_planning_1_1_environment_a03a78ae30f71dcd77189ca11756c97d1}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}!Environment@{Environment}}
+\index{Environment@{Environment}!lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+\subsubsection{\texorpdfstring{Environment()}{Environment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily lib\+Multi\+Robot\+Planning\+::\+Environment\+::\+Environment (\begin{DoxyParamCaption}\item[{const \hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_environment_a125ea447e414ab365fea0eead52e47d7}\label{classlib_multi_robot_planning_1_1_environment_a125ea447e414ab365fea0eead52e47d7}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}!admissible\+Heuristic@{admissible\+Heuristic}}
+\index{admissible\+Heuristic@{admissible\+Heuristic}!lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+\subsubsection{\texorpdfstring{admissible\+Heuristic()}{admissibleHeuristic()}}
+{\footnotesize\ttfamily int lib\+Multi\+Robot\+Planning\+::\+Environment\+::admissible\+Heuristic (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 316 of file environment.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlib_multi_robot_planning_1_1_environment_a125ea447e414ab365fea0eead52e47d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_environment_a34aca235da8a5a1389ec71507c4191af}\label{classlib_multi_robot_planning_1_1_environment_a34aca235da8a5a1389ec71507c4191af}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}!create\+Constraints\+From\+Conflict@{create\+Constraints\+From\+Conflict}}
+\index{create\+Constraints\+From\+Conflict@{create\+Constraints\+From\+Conflict}!lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+\subsubsection{\texorpdfstring{create\+Constraints\+From\+Conflict()}{createConstraintsFromConflict()}}
+{\footnotesize\ttfamily void lib\+Multi\+Robot\+Planning\+::\+Environment\+::create\+Constraints\+From\+Conflict (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_multi_robot_planning_1_1_conflict}{Conflict} \&}]{conflict,  }\item[{std\+::map$<$ size\+\_\+t, \hyperlink{structlib_multi_robot_planning_1_1_constraints}{Constraints} $>$ \&}]{constraints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 562 of file environment.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlib_multi_robot_planning_1_1_environment_a34aca235da8a5a1389ec71507c4191af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_environment_a7854e1df446e52051492b724c0416956}\label{classlib_multi_robot_planning_1_1_environment_a7854e1df446e52051492b724c0416956}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}!focal\+Heuristic@{focal\+Heuristic}}
+\index{focal\+Heuristic@{focal\+Heuristic}!lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+\subsubsection{\texorpdfstring{focal\+Heuristic()}{focalHeuristic()}}
+{\footnotesize\ttfamily int lib\+Multi\+Robot\+Planning\+::\+Environment\+::focal\+Heuristic (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, int $>$ $>$ \&}]{solution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 356 of file environment.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlib_multi_robot_planning_1_1_environment_a7854e1df446e52051492b724c0416956_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlib_multi_robot_planning_1_1_environment_a7854e1df446e52051492b724c0416956_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_environment_ac76b52b63f0bfbdde9dc6fed2520a0b6}\label{classlib_multi_robot_planning_1_1_environment_ac76b52b63f0bfbdde9dc6fed2520a0b6}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}!focal\+State\+Heuristic@{focal\+State\+Heuristic}}
+\index{focal\+State\+Heuristic@{focal\+State\+Heuristic}!lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+\subsubsection{\texorpdfstring{focal\+State\+Heuristic()}{focalStateHeuristic()}}
+{\footnotesize\ttfamily int lib\+Multi\+Robot\+Planning\+::\+Environment\+::focal\+State\+Heuristic (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&}]{s,  }\item[{int}]{,  }\item[{const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, int $>$ $>$ \&}]{solution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 323 of file environment.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlib_multi_robot_planning_1_1_environment_ac76b52b63f0bfbdde9dc6fed2520a0b6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlib_multi_robot_planning_1_1_environment_ac76b52b63f0bfbdde9dc6fed2520a0b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_environment_adf9e6ca87f829fd0fdc185d85b29bb4e}\label{classlib_multi_robot_planning_1_1_environment_adf9e6ca87f829fd0fdc185d85b29bb4e}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}!focal\+Transition\+Heuristic@{focal\+Transition\+Heuristic}}
+\index{focal\+Transition\+Heuristic@{focal\+Transition\+Heuristic}!lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+\subsubsection{\texorpdfstring{focal\+Transition\+Heuristic()}{focalTransitionHeuristic()}}
+{\footnotesize\ttfamily int lib\+Multi\+Robot\+Planning\+::\+Environment\+::focal\+Transition\+Heuristic (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&}]{s1a,  }\item[{const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&}]{s1b,  }\item[{int}]{,  }\item[{int}]{,  }\item[{const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, int $>$ $>$ \&}]{solution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 339 of file environment.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlib_multi_robot_planning_1_1_environment_adf9e6ca87f829fd0fdc185d85b29bb4e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlib_multi_robot_planning_1_1_environment_adf9e6ca87f829fd0fdc185d85b29bb4e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_environment_a1d47448bd35c1f46f70c6b7fa37e8146}\label{classlib_multi_robot_planning_1_1_environment_a1d47448bd35c1f46f70c6b7fa37e8146}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}!get\+First\+Conflict@{get\+First\+Conflict}}
+\index{get\+First\+Conflict@{get\+First\+Conflict}!lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+\subsubsection{\texorpdfstring{get\+First\+Conflict()}{getFirstConflict()}}
+{\footnotesize\ttfamily bool lib\+Multi\+Robot\+Planning\+::\+Environment\+::get\+First\+Conflict (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_plan_result}{Plan\+Result}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, int $>$ $>$ \&}]{solution,  }\item[{\hyperlink{structlib_multi_robot_planning_1_1_conflict}{Conflict} \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 463 of file environment.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlib_multi_robot_planning_1_1_environment_a1d47448bd35c1f46f70c6b7fa37e8146_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlib_multi_robot_planning_1_1_environment_a1d47448bd35c1f46f70c6b7fa37e8146_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_environment_ad0f11d7a4b91ea3d7f7fa39b9ffe9758}\label{classlib_multi_robot_planning_1_1_environment_ad0f11d7a4b91ea3d7f7fa39b9ffe9758}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}!get\+Neighbors@{get\+Neighbors}}
+\index{get\+Neighbors@{get\+Neighbors}!lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+\subsubsection{\texorpdfstring{get\+Neighbors()}{getNeighbors()}}
+{\footnotesize\ttfamily void lib\+Multi\+Robot\+Planning\+::\+Environment\+::get\+Neighbors (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&}]{s,  }\item[{std\+::vector$<$ \hyperlink{structlib_multi_robot_planning_1_1_neighbor}{Neighbor}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, int $>$ $>$ \&}]{neighbors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 404 of file environment.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlib_multi_robot_planning_1_1_environment_ad0f11d7a4b91ea3d7f7fa39b9ffe9758_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_environment_ad3e27d5501dc54151814e015373e3ef7}\label{classlib_multi_robot_planning_1_1_environment_ad3e27d5501dc54151814e015373e3ef7}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}!high\+Level\+Expanded@{high\+Level\+Expanded}}
+\index{high\+Level\+Expanded@{high\+Level\+Expanded}!lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+\subsubsection{\texorpdfstring{high\+Level\+Expanded()}{highLevelExpanded()}}
+{\footnotesize\ttfamily int lib\+Multi\+Robot\+Planning\+::\+Environment\+::high\+Level\+Expanded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 589 of file environment.\+hpp.
+
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_environment_a397c066a4202f0dccbb1346e2e3c8338}\label{classlib_multi_robot_planning_1_1_environment_a397c066a4202f0dccbb1346e2e3c8338}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}!is\+Solution@{is\+Solution}}
+\index{is\+Solution@{is\+Solution}!lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+\subsubsection{\texorpdfstring{is\+Solution()}{isSolution()}}
+{\footnotesize\ttfamily bool lib\+Multi\+Robot\+Planning\+::\+Environment\+::is\+Solution (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 399 of file environment.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlib_multi_robot_planning_1_1_environment_a397c066a4202f0dccbb1346e2e3c8338_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_environment_a9dfe6761bd0b6d25628146cabfc08952}\label{classlib_multi_robot_planning_1_1_environment_a9dfe6761bd0b6d25628146cabfc08952}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}!low\+Level\+Expanded@{low\+Level\+Expanded}}
+\index{low\+Level\+Expanded@{low\+Level\+Expanded}!lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+\subsubsection{\texorpdfstring{low\+Level\+Expanded()}{lowLevelExpanded()}}
+{\footnotesize\ttfamily int lib\+Multi\+Robot\+Planning\+::\+Environment\+::low\+Level\+Expanded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 591 of file environment.\+hpp.
+
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_environment_a5ce6ca98a37286cfe865b2b52b6c65aa}\label{classlib_multi_robot_planning_1_1_environment_a5ce6ca98a37286cfe865b2b52b6c65aa}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}!on\+Expand\+High\+Level\+Node@{on\+Expand\+High\+Level\+Node}}
+\index{on\+Expand\+High\+Level\+Node@{on\+Expand\+High\+Level\+Node}!lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+\subsubsection{\texorpdfstring{on\+Expand\+High\+Level\+Node()}{onExpandHighLevelNode()}}
+{\footnotesize\ttfamily void lib\+Multi\+Robot\+Planning\+::\+Environment\+::on\+Expand\+High\+Level\+Node (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 582 of file environment.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classlib_multi_robot_planning_1_1_environment_a5ce6ca98a37286cfe865b2b52b6c65aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_environment_a022450370c58811b6407650e72a11230}\label{classlib_multi_robot_planning_1_1_environment_a022450370c58811b6407650e72a11230}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}!on\+Expand\+Low\+Level\+Node@{on\+Expand\+Low\+Level\+Node}}
+\index{on\+Expand\+Low\+Level\+Node@{on\+Expand\+Low\+Level\+Node}!lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+\subsubsection{\texorpdfstring{on\+Expand\+Low\+Level\+Node()}{onExpandLowLevelNode()}}
+{\footnotesize\ttfamily void lib\+Multi\+Robot\+Planning\+::\+Environment\+::on\+Expand\+Low\+Level\+Node (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 584 of file environment.\+hpp.
+
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_environment_afaf6184a779ac88068b4d405080d055c}\label{classlib_multi_robot_planning_1_1_environment_afaf6184a779ac88068b4d405080d055c}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}!operator=@{operator=}}
+\index{operator=@{operator=}!lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment}\& lib\+Multi\+Robot\+Planning\+::\+Environment\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classlib_multi_robot_planning_1_1_environment}{Environment} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classlib_multi_robot_planning_1_1_environment_a7a664e26155157d558e0755204b74d11}\label{classlib_multi_robot_planning_1_1_environment_a7a664e26155157d558e0755204b74d11}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}!set\+Low\+Level\+Context@{set\+Low\+Level\+Context}}
+\index{set\+Low\+Level\+Context@{set\+Low\+Level\+Context}!lib\+Multi\+Robot\+Planning\+::\+Environment@{lib\+Multi\+Robot\+Planning\+::\+Environment}}
+\subsubsection{\texorpdfstring{set\+Low\+Level\+Context()}{setLowLevelContext()}}
+{\footnotesize\ttfamily void lib\+Multi\+Robot\+Planning\+::\+Environment\+::set\+Low\+Level\+Context (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{agent\+Idx,  }\item[{const \hyperlink{structlib_multi_robot_planning_1_1_constraints}{Constraints} $\ast$}]{constraints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 304 of file environment.\+hpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/ecbs/include/\hyperlink{environment_8hpp}{environment.\+hpp}\end{DoxyCompactItemize}

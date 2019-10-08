@@ -1,0 +1,125 @@
+\hypertarget{structlib_multi_robot_planning_1_1_neighbor}{}\section{lib\+Multi\+Robot\+Planning\+:\+:Neighbor$<$ State, Action, Cost $>$ Struct Template Reference}
+\label{structlib_multi_robot_planning_1_1_neighbor}\index{lib\+Multi\+Robot\+Planning\+::\+Neighbor$<$ State, Action, Cost $>$@{lib\+Multi\+Robot\+Planning\+::\+Neighbor$<$ State, Action, Cost $>$}}
+
+
+Represents state transations.  
+
+
+
+
+{\ttfamily \#include $<$neighbor.\+hpp$>$}
+
+
+
+Collaboration diagram for lib\+Multi\+Robot\+Planning\+:\+:Neighbor$<$ State, Action, Cost $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{structlib_multi_robot_planning_1_1_neighbor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structlib_multi_robot_planning_1_1_neighbor_a048152420e26c75abca920a4c5060c42}{Neighbor} (const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&\hyperlink{structlib_multi_robot_planning_1_1_neighbor_ad4930766ec86e82ae342ffe94f5e0da4}{state}, const \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action} \&\hyperlink{structlib_multi_robot_planning_1_1_neighbor_a8b50ab4edc18e97d809dcd89c42bed44}{action}, Cost \hyperlink{structlib_multi_robot_planning_1_1_neighbor_af269be36c1200896a5990f7ee3d9da27}{cost})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structlib_multi_robot_planning_1_1_state}{State} \hyperlink{structlib_multi_robot_planning_1_1_neighbor_ad4930766ec86e82ae342ffe94f5e0da4}{state}
+\begin{DoxyCompactList}\small\item\em neighboring state \end{DoxyCompactList}\item 
+\hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action} \hyperlink{structlib_multi_robot_planning_1_1_neighbor_a8b50ab4edc18e97d809dcd89c42bed44}{action}
+\begin{DoxyCompactList}\small\item\em action to get to the neighboring state \end{DoxyCompactList}\item 
+Cost \hyperlink{structlib_multi_robot_planning_1_1_neighbor_af269be36c1200896a5990f7ee3d9da27}{cost}
+\begin{DoxyCompactList}\small\item\em cost to get to the neighboring state \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename State, typename Action, typename Cost$>$\newline
+struct lib\+Multi\+Robot\+Planning\+::\+Neighbor$<$ State, Action, Cost $>$}
+
+Represents state transations. 
+
+This class represents a transition from a start state applying an action with the given cost.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em \hyperlink{structlib_multi_robot_planning_1_1_state}{State}} & Custom state for the search. Needs to be copy\textquotesingle{}able \\
+\hline
+{\em Action} & Custom action for the search. Needs to be copy\textquotesingle{}able \\
+\hline
+{\em Cost} & Custom Cost type (integer or floating point types) \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 15 of file neighbor.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structlib_multi_robot_planning_1_1_neighbor_a048152420e26c75abca920a4c5060c42}\label{structlib_multi_robot_planning_1_1_neighbor_a048152420e26c75abca920a4c5060c42}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Neighbor@{lib\+Multi\+Robot\+Planning\+::\+Neighbor}!Neighbor@{Neighbor}}
+\index{Neighbor@{Neighbor}!lib\+Multi\+Robot\+Planning\+::\+Neighbor@{lib\+Multi\+Robot\+Planning\+::\+Neighbor}}
+\subsubsection{\texorpdfstring{Neighbor()}{Neighbor()}}
+{\footnotesize\ttfamily template$<$typename State, typename Action, typename Cost$>$ \\
+\hyperlink{structlib_multi_robot_planning_1_1_neighbor}{lib\+Multi\+Robot\+Planning\+::\+Neighbor}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost $>$\+::\hyperlink{structlib_multi_robot_planning_1_1_neighbor}{Neighbor} (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_multi_robot_planning_1_1_state}{State} \&}]{state,  }\item[{const \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action} \&}]{action,  }\item[{Cost}]{cost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 16 of file neighbor.\+hpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structlib_multi_robot_planning_1_1_neighbor_a8b50ab4edc18e97d809dcd89c42bed44}\label{structlib_multi_robot_planning_1_1_neighbor_a8b50ab4edc18e97d809dcd89c42bed44}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Neighbor@{lib\+Multi\+Robot\+Planning\+::\+Neighbor}!action@{action}}
+\index{action@{action}!lib\+Multi\+Robot\+Planning\+::\+Neighbor@{lib\+Multi\+Robot\+Planning\+::\+Neighbor}}
+\subsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily template$<$typename State, typename Action, typename Cost$>$ \\
+\hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action} \hyperlink{structlib_multi_robot_planning_1_1_neighbor}{lib\+Multi\+Robot\+Planning\+::\+Neighbor}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost $>$\+::action}
+
+
+
+action to get to the neighboring state 
+
+
+
+Definition at line 22 of file neighbor.\+hpp.
+
+\mbox{\Hypertarget{structlib_multi_robot_planning_1_1_neighbor_af269be36c1200896a5990f7ee3d9da27}\label{structlib_multi_robot_planning_1_1_neighbor_af269be36c1200896a5990f7ee3d9da27}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Neighbor@{lib\+Multi\+Robot\+Planning\+::\+Neighbor}!cost@{cost}}
+\index{cost@{cost}!lib\+Multi\+Robot\+Planning\+::\+Neighbor@{lib\+Multi\+Robot\+Planning\+::\+Neighbor}}
+\subsubsection{\texorpdfstring{cost}{cost}}
+{\footnotesize\ttfamily template$<$typename State, typename Action, typename Cost$>$ \\
+Cost \hyperlink{structlib_multi_robot_planning_1_1_neighbor}{lib\+Multi\+Robot\+Planning\+::\+Neighbor}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost $>$\+::cost}
+
+
+
+cost to get to the neighboring state 
+
+
+
+Definition at line 24 of file neighbor.\+hpp.
+
+\mbox{\Hypertarget{structlib_multi_robot_planning_1_1_neighbor_ad4930766ec86e82ae342ffe94f5e0da4}\label{structlib_multi_robot_planning_1_1_neighbor_ad4930766ec86e82ae342ffe94f5e0da4}} 
+\index{lib\+Multi\+Robot\+Planning\+::\+Neighbor@{lib\+Multi\+Robot\+Planning\+::\+Neighbor}!state@{state}}
+\index{state@{state}!lib\+Multi\+Robot\+Planning\+::\+Neighbor@{lib\+Multi\+Robot\+Planning\+::\+Neighbor}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily template$<$typename State, typename Action, typename Cost$>$ \\
+\hyperlink{structlib_multi_robot_planning_1_1_state}{State} \hyperlink{structlib_multi_robot_planning_1_1_neighbor}{lib\+Multi\+Robot\+Planning\+::\+Neighbor}$<$ \hyperlink{structlib_multi_robot_planning_1_1_state}{State}, \hyperlink{namespacelib_multi_robot_planning_aba73fb71693f86a324adfa0e41e1053d}{Action}, Cost $>$\+::state}
+
+
+
+neighboring state 
+
+
+
+Definition at line 20 of file neighbor.\+hpp.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+third\+\_\+party/ecbs/include/\hyperlink{neighbor_8hpp}{neighbor.\+hpp}\end{DoxyCompactItemize}
